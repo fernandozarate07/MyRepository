@@ -1,0 +1,9 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+:root {
+  --black-color: #353535;
+  --primary-color: #3c6e71;
+  --secondary-color: #284b63;
+  --white-color: #ffffff;
+  --gray-color: #d9d9d9;
+}
