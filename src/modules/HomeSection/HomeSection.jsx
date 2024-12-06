@@ -1,3 +1,4 @@
+import ButtonArrow from "../ButtonArrow/ButtonArrow";
 import styles from "./HomeSection.module.css";
 const HomeSection = () => {
   return (
@@ -13,6 +14,7 @@ const HomeSection = () => {
           <span>is what drives me.</span>
         </div>
       </div>
+      <ButtonArrow />
     </div>
   );
 };
