@@ -1,0 +1,43 @@
+.navSection__container {
+  padding: 40px;
+
+  height: calc(100% - 80px);
+  width: calc(100% - 80px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navSection__main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.navSection__name {
+  margin: 0;
+
+  font-family: "Hubot", sans-serif;
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+.navSection__description,
+.navSection__footer {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.navSection__contact {
+  padding-top: 40px;
+  border-top: 1px solid var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navSection__contact i {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: var(--gray-color);
+  cursor: pointer;
+}

@@ -1,3 +1,12 @@
-.title {
-  color: red;
+.app__container {
+  height: calc(100% - 80px);
+  width: calc(100% - 80px);
+
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
 }

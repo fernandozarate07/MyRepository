@@ -1,9 +1,32 @@
-@import "../node_modules/normalize.css/normalize.css";
-
+@import "../../node_modules/normalize.css/normalize.css";
 :root {
   --black-color: #353535;
-  --primary-color: #3c6e71;
-  --secondary-color: #284b63;
-  --white-color: #ffffff;
+  --primary-color: #0077b6;
+  --secondary-color: #00b4d8;
+  --white-color: #ffff;
   --gray-color: #d9d9d9;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+@font-face {
+  font-family: "Hubot";
+  src: url("../assets/font/Hubot_Sans/static/HubotSans_Condensed-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../assets/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
 }
