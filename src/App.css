@@ -11,8 +11,9 @@
 .app__left,
 .app__right {
   padding: 40px;
-
+}
+.app__right {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }

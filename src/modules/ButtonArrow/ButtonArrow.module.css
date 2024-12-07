@@ -6,8 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--gray-color);
-  color: var(--black-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
   border: none;
   border-radius: 10px;
   font-weight: 500;
@@ -16,10 +16,9 @@
 }
 
 .btn:hover {
-  background-color: var(--black-color);
+  background-color: var(--white-color);
   transform: translateY(5px);
 }
-
 .content {
   display: flex;
   align-items: center;
@@ -38,7 +37,7 @@
 .arrow {
   position: absolute;
 
-  color: var(--white-color);
+  color: var(--black-color);
   opacity: 0;
   transform: translateY(-20px);
   transition: transform 0.3s ease;
