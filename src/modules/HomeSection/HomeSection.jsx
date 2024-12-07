@@ -1,21 +1,26 @@
 import ButtonArrow from "../ButtonArrow/ButtonArrow";
 import styles from "./HomeSection.module.css";
+
 const HomeSection = () => {
   return (
     <div className={styles.homeSection__container}>
       <div className={styles.homeSection__content}>
-        <h2 className={styles.homeSection__name}>Hello, I'm Fernando.</h2>
-        <div className={styles.homeSection__description_container}>
-          <span>I was born in San Juan, Argentina.</span>
-          <span>My greatest passion lies in creative processes,</span>
-          <span>which is why I feel deeply attracted to art and design,</span>
-          <span>from a song to a web application.</span>
-          <span>Transforming ideas into unique experiences </span>
-          <span>is what drives me.</span>
-        </div>
+        <span>Soy un apasionado de los procesos creativos.</span>
+        <span>Los encuentro en todo lo que disfruto hacer,</span>
+        <span>desde una canción hasta una aplicación web.</span>
       </div>
       <ButtonArrow />
+      <div className={styles.homeSection__stack}>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-sass"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-git-alt"></i>
+        <i class="fa-brands fa-square-github"></i>
+      </div>
     </div>
   );
 };
+
 export default HomeSection;

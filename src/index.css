@@ -1,0 +1,26 @@
+@import "/node_modules/normalize.css/normalize.css";
+:root {
+  --black-color: #212529;
+  --white-color: #f8f9fa;
+  --gray-color: #adb5bd;
+}
+@font-face {
+  font-family: "Font-one";
+  src: url("/src/assets/font/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Font-one", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}

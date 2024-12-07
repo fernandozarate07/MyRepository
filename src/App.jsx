@@ -1,4 +1,4 @@
-import "./css/App.css";
+import "./App.css";
 import HomeSection from "./modules/HomeSection/HomeSection.jsx";
 import NavSection from "./modules/NavSection/NavSection.jsx";
 

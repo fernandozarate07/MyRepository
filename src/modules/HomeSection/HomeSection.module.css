@@ -1,23 +1,28 @@
 .homeSection__container {
-  width: 100%;
-  height: 100%;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 }
 .homeSection__content {
-  width: 50%;
-}
-.homeSection__name {
-  color: var(--primary-color);
-  text-align: center;
-}
-.homeSection__description_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 10px;
-  text-align: center;
+
+  border-radius: 10px;
+}
+.homeSection__content span {
+  font-size: 1.2rem;
+}
+.homeSection__stack {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.homeSection__stack i {
+  font-size: 2rem;
 }
