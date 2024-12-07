@@ -5,13 +5,15 @@ const Project = ({ title, description, imageUrl }) => {
     <div className={styles.project__container}>
       <img src={imageUrl} alt={title} className={styles.projec__image} />
       <div className={styles.project__info}>
-        <a href="#">
-          <h3 className={styles.project__name}>{title}</h3>
-        </a>
+        <div className={styles.project__name_container}>
+          <a href="#">
+            <h3 className={styles.project__name}>{title}</h3>
+          </a>
+          <a href="#">
+            <i className={`${styles.project__github_link} fa-brands fa-square-github`}></i>
+          </a>
+        </div>
         <p className={styles.project__description}>{description}</p>
-        <a href="#">
-          <i className={`${styles.project__btn} fa-brands fa-square-github`}></i>
-        </a>
       </div>
     </div>
   );

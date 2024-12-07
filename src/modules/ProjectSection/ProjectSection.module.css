@@ -15,25 +15,19 @@
   font-size: 2rem;
   color: var(--gray-color);
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.projectSection__btn:hover {
+  transform: scale(1.1);
+  color: var(--black-color);
 }
 .projectSection__content {
   height: 100%;
   width: 100%;
   display: flex;
+
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  background-color: var(--gray-color);
-  overflow: hidden;
-  position: relative;
-}
-
-.projectSection__content .project__info {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.projectSection__content img {
-  transition: opacity 0.5s ease-in-out;
 }
 .projectSection__all_project {
   display: flex;
