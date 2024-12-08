@@ -11,7 +11,7 @@ const ProjectSection = () => {
       title: "Aplicación Móvil",
       description:
         "Desarrollo de una app para gestionar tareas diarias, con funcionalidades de recordatorios, tareas pendientes y sincronización en la nube para acceso desde cualquier dispositivo.",
-      imageUrl: "../../src/assets/image/one.jpg",
+      imageUrl: "../../src/assets/image/one.png",
     },
     {
       title: "Sitio Web Corporativo",
