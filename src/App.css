@@ -3,10 +3,11 @@
   width: 100vw;
 
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
 
   overflow: hidden;
-  background-color: var(--blackOpacity-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 .app__left,
 .app__right {
@@ -16,5 +17,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white-color);
+  border-left: 2px solid var(--gray-color);
 }

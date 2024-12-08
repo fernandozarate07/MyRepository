@@ -20,7 +20,7 @@
   gap: 10px;
 
   border-radius: 10px;
-  background-color: var(--blackOpacity-color);
+  background-color: var(--gray-color);
 }
 .homeSection__title {
   color: var(--primary-color);
