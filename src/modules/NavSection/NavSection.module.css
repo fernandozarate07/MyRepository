@@ -17,12 +17,15 @@
 }
 .span_one {
   font-size: 2rem;
+  color: var(--black-color);
 }
 .span_two {
   font-size: 1rem;
+  color: var(--primary-color);
 }
 .navSection__description {
   font-size: 1rem;
+  color: var(--primary-color);
 }
 .navSection__contact {
   padding-top: 40px;
@@ -32,15 +35,14 @@
   align-items: center;
   gap: 40px;
 
-  border-top: 1px solid var(--gray-color);
+  border-top: 2px solid var(--white-color);
 }
 .navSection__contact i {
   font-size: 2rem;
-  color: var(--gray-color);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .navSection__contact i:hover {
-  color: var(--black-color);
+  color: var(--primary-color);
   transform: scale(1.1);
 }

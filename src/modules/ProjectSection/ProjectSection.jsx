@@ -4,7 +4,7 @@ import Project from "../Project/Project";
 
 const ProjectSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false); // Estado para pausar el intervalo
+  const [isPaused, setIsPaused] = useState(false);
 
   const projects = [
     {
@@ -34,13 +34,13 @@ const ProjectSection = () => {
   ];
 
   useEffect(() => {
-    if (isPaused) return; // Detener el intervalo si está pausado
+    if (isPaused) return;
 
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
     }, 5000);
 
-    return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar
+    return () => clearInterval(intervalId);
   }, [projects.length, isPaused]);
 
   const nextProject = () => {
@@ -52,24 +52,21 @@ const ProjectSection = () => {
   };
 
   return (
-    <div className={styles.projectSection__container}>
-      <button onClick={nextProject} className={styles.projectSection__btn}>
-        <i className="fa-solid fa-arrow-up"></i>
-      </button>
+    <div className={styles.projectSection}>
       <div
-        className={styles.projectSection__content}
+        className={styles.projectSection__Project}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}>
         <Project
           title={projects[currentIndex].title}
           description={projects[currentIndex].description}
           imageUrl={projects[currentIndex].imageUrl}
+          nextProject={nextProject}
+          prevProject={prevProject}
+          isPaused={isPaused}
         />
       </div>
-      <button onClick={prevProject} className={styles.projectSection__btn}>
-        <i className="fa-solid fa-arrow-down"></i>
-      </button>
-      <div className={styles.projectSection__all_project}>
+      <div className={styles.projectSection__allProjectBtn}>
         <a href="#">Todos los proyectos</a>
       </div>
     </div>

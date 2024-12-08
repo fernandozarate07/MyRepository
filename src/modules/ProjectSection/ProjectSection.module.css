@@ -1,51 +1,39 @@
-.projectSection__container {
+.projectSection {
   height: 100%;
   width: 100%;
 
   display: grid;
-  grid-template-rows: 1fr 7fr 1fr 1fr;
+  grid-template-rows: 1fr 15vh;
 }
-.projectSection__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-  border: none;
-  font-size: 2rem;
-  color: var(--gray-color);
-  background-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.projectSection__btn:hover {
-  transform: scale(1.1);
-  color: var(--black-color);
-}
-.projectSection__content {
+.projectSection__Project {
   height: 100%;
   width: 100%;
-  display: flex;
+}
+.projectSection__allProjectBtn {
+  height: 100%;
+  width: 100%;
 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.projectSection__all_project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.projectSection__allProjectBtn a {
+  position: relative;
 
-  border-top: 1px solid var(--gray-color);
+  color: var(--black-color);
+  font-size: 1.2;
+  font-weight: 900;
 }
-.projectSection__all_project a {
-  margin-top: 30px;
-  padding: 10px;
-
-  border-radius: 10px;
-  background-color: var(--gray-color);
-  transition: all 0.3s ease-in-out;
+.projectSection__allProjectBtn a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
 }
-.projectSection__all_project a:hover {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  transform: scale(1.1);
+.projectSection__allProjectBtn a:hover::after {
+  width: 100%;
 }

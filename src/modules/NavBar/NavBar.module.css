@@ -17,6 +17,3 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
-.li span:hover {
-  color: var(--gray-color);
-}

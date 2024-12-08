@@ -1,22 +1,32 @@
 .homeSection__container {
-  padding: 20px;
+  width: 100%;
+  height: 100%;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .homeSection__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.homeSection__containerSpan {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 
   border-radius: 10px;
+  background-color: var(--blackOpacity-color);
+}
+.homeSection__title {
+  color: var(--primary-color);
 }
 .homeSection__content span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .homeSection__stack {
   width: 100%;
