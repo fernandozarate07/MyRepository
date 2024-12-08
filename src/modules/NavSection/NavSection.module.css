@@ -43,4 +43,5 @@
 }
 .navSection__contact i:hover {
   transform: scale(1.1);
+  color: var(--black-color);
 }

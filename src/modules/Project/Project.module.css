@@ -34,13 +34,13 @@
   cursor: pointer;
   border: none;
   font-size: 2rem;
-  color: var(--black-color);
+  color: var(--gray-color);
   background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 .projectSection__btn:hover {
   transform: scale(1.1);
-  color: var(--primary-color);
+  color: var(--black-color);
 }
 
 .project__contentImg {
@@ -98,7 +98,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
   transition: width 0.3s ease;
 }
 
@@ -110,11 +110,11 @@
   align-self: center;
 }
 .project__github_link {
-  color: var(--black-color);
+  color: var(--gray-color);
   font-size: 2rem;
   transition: all 0.3s ease-in-out;
 }
 .project__github_link:hover {
-  color: var(--primary-color);
+  color: var(--black-color);
   transform: scale(1.1);
 }

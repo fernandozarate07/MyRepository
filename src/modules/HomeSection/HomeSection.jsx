@@ -1,6 +1,5 @@
 import ButtonArrow from "../ButtonArrow/ButtonArrow";
 import styles from "./HomeSection.module.css";
-
 const HomeSection = () => {
   return (
     <div className={styles.homeSection__container}>
