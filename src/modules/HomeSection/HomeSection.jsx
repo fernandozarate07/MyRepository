@@ -5,15 +5,15 @@ const HomeSection = () => {
     <div className={styles.homeSection__container}>
       <div className={styles.homeSection__content}>
         <div className={styles.homeSection__containerSpan}>
-          <span>Me llamo Fernando y soy</span>
-          <span>de San Juan, Argentina.</span>
-          <span>Me apasionan los procesos </span>
-          <span>creativos y siempre busco</span>
-          <span>formas de crear cosas únicas.</span>
-          <span>Disfruto explorando esta</span>
-          <span>pasión en todo lo que hago,</span>
-          <span>ya sea componiendo música </span>
-          <span>o desarrollando app web unicas.</span>
+          <span>¡Hola! gracias por pasarte.</span>
+          <span>Desarrollador Web desde 2024.</span>
+          <span>Estudiante de Programación web en la UNSJ.</span>
+          <span>Profesor de Música con amplia formación pedagogica.</span>
+          <span></span>
+          <span>Poseo una enorme pasión por los procesos creativos</span>
+          <span>que logro encontrar en todo lo que hago,</span>
+          <span>desde componer una canción a</span>
+          <span>una app web única.</span>
         </div>
         <ButtonArrow />
         <div className={styles.homeSection__stack}>

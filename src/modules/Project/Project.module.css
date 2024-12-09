@@ -1,19 +1,18 @@
 .project__container {
   height: 100%;
   width: 100%;
+
   display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 10px;
+  grid-template-rows: 2fr 1fr;
+  gap: 20px;
 }
 .project_containerImg {
-  padding: 20px;
+  padding-inline: 40px;
+  padding-top: 40px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-
-  border-radius: 10px;
 }
 .projectSection__containerBtn {
   display: flex;
@@ -66,27 +65,26 @@
   color: var(--white-color);
 }
 .projec__image {
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
 
   object-fit: cover;
   border-radius: 10px;
 }
 .project__info {
-  height: 100%;
-  padding: 20px;
+  padding-inline: 40px;
+  padding-bottom: 40px;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  border-radius: 10px;
+  gap: 20px;
 }
 .project__name_container {
   display: flex;
   justify-content: space-between;
 }
 .project__name {
+  padding: 5px;
   font-size: 2rem;
   position: relative;
 }
@@ -104,10 +102,6 @@
 
 .project__name:hover::after {
   width: 100%;
-}
-
-.project__description {
-  align-self: center;
 }
 .project__github_link {
   color: var(--gray-color);

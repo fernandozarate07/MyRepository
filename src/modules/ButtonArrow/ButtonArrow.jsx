@@ -6,12 +6,9 @@ const ButtonArrow = () => {
   const { setSectionState } = useContext(AppContext);
 
   return (
-    <button className={styles.btn} onClick={() => setSectionState("projects")}>
-      <span className={styles.content}>Mira mi trabajo</span>
-      <span className={styles.arrow}>
-        <i className="fa-solid fa-arrow-down"></i>
-      </span>
-    </button>
+    <div className={styles.btn} onClick={() => setSectionState("projects")}>
+      <span className={styles.span}>MI TRABAJO</span>
+    </div>
   );
 };
 export default ButtonArrow;

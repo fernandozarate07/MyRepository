@@ -3,37 +3,32 @@
   height: 100%;
 
   display: grid;
-  grid-template-rows: 1fr 10%;
+  grid-template-rows: 1.5fr 3fr 0.5fr;
 }
-.navSection__main {
+.navSection__portal {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .navSection__name {
-  padding-bottom: 2px;
-
-  font-size: 3rem;
-}
-.span_one {
   font-size: 2rem;
 }
-.span_two {
-  font-size: 1rem;
-  color: var(--gray-color);
-}
 .navSection__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
   font-size: 1rem;
-  color: var(--gray-color);
+}
+.navSection__copy {
+  padding-bottom: 5px;
 }
 .navSection__contact {
-  padding-top: 40px;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 40px;
 
-  border-top: 2px solid var(--gray-color);
+  border-top: 2px solid var(--black-color);
 }
 .navSection__contact i {
   font-size: 2rem;

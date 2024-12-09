@@ -1,65 +1,27 @@
 .btn {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 15px;
-
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  background-color: var(--gray-color);
-  border: none;
-  border-radius: 10px;
+  align-items: center;
   font-weight: 900;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  border: none;
 }
-
-.btn:hover {
-  color: var(--gray-color);
-  background-color: var(--black-color);
-  transform: translateY(5px);
-}
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.span {
   position: relative;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  opacity: 1;
-  transform: translateY(0);
-}
+  padding: 10px;
 
-.btn:hover .content {
-  opacity: 0;
-  transform: translateY(10px);
+  cursor: pointer;
 }
-
-.arrow {
+.span::after {
+  content: "";
   position: absolute;
-
-  color: var(--primary-color);
-  transform: translateY(-20px);
-  transition: transform 0.3s ease;
-  font-size: 2rem;
-
-  opacity: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--black-color);
+  transition: width 0.3s ease;
 }
-
-.btn:hover .arrow {
-  opacity: 1;
-  animation: moveArrow 2s linear infinite;
-}
-
-@keyframes moveArrow {
-  0% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(50px);
-  }
+.span:hover::after {
+  width: 100%;
 }

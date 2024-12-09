@@ -1,0 +1,125 @@
+.resume__container {
+  width: 476px;
+  height: 674px;
+
+  padding: 20px;
+
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr 2fr;
+  gap: 20px;
+
+  font-size: 0.5rem;
+}
+.resume__portada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resume_nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resume__name {
+  font-size: 1.25rem;
+}
+.resume__description {
+  font-size: 0.75rem;
+}
+.resume__contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(5 1fr);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.resume__contact i {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume__subtitle {
+  font-size: 0.75rem;
+}
+.section {
+  padding-block: 10px;
+  border-top: 1px solid var(--black-color);
+}
+.resume__containerAboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resume__aboutmeDescription {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.resume__containerExperience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resume__sectionExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resume__sectionExperience h3 {
+  font-size: 0.6rem;
+}
+/* education & stack */
+.resume__containerEducationStack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resume__containerEducation,
+.resume__containerStack {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.resume__containerEducation {
+  border-right: 1px solid var(--black-color);
+}
+.resume__contentEstudies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.resume__educationItem {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.resume__educationDate {
+  font-weight: 900;
+  font-size: 0.4rem;
+}
+.containerEducationSpan {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.resume__containerStack {
+  padding-inline: 20px;
+}
+.resume__contentStack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.resume__stackContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}

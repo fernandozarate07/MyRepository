@@ -38,7 +38,7 @@ const ProjectSection = () => {
 
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [projects.length, isPaused]);
@@ -66,8 +66,9 @@ const ProjectSection = () => {
           isPaused={isPaused}
         />
       </div>
-      <div className={styles.projectSection__allProjectBtn}>
-        <a href="#">Todos los proyectos</a>
+      <div className={styles.projectSection__opcionBtn}>
+        <a href="#">TODOS MIS PROJECTOS</a>
+        <a href="#">DESCARGA MI CV</a>
       </div>
     </div>
   );

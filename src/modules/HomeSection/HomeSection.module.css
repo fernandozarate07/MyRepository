@@ -7,23 +7,18 @@
   align-items: center;
 }
 .homeSection__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
   gap: 20px;
 }
 .homeSection__containerSpan {
   padding: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  border-radius: 10px;
-  background-color: var(--gray-color);
-}
-.homeSection__title {
-  color: var(--primary-color);
+  text-align: center;
 }
 .homeSection__content span {
   font-size: 1rem;
@@ -31,7 +26,7 @@
 .homeSection__stack {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .homeSection__stack i {
   font-size: 2rem;
