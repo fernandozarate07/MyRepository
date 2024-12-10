@@ -25,9 +25,18 @@
 }
 .homeSection__stack {
   width: 100%;
+
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid var(--black-color);
 }
 .homeSection__stack i {
   font-size: 2rem;
+}
+.homeSection__stackSpanContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

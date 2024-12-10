@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 .navSection__name {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .navSection__description {
   display: flex;
@@ -28,10 +28,10 @@
   justify-content: space-around;
   align-items: center;
 
-  border-top: 2px solid var(--black-color);
+  border-top: 1px solid var(--black-color);
 }
 .navSection__contact i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   color: var(--gray-color);

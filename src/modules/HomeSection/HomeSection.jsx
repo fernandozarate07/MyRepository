@@ -17,13 +17,32 @@ const HomeSection = () => {
         </div>
         <ButtonArrow />
         <div className={styles.homeSection__stack}>
-          <i className="fa-brands fa-html5"></i>
+          <div className={styles.homeSection__stackSpanContainer}>
+            <span>HTML</span>
+            <span>~</span>
+            <span>CSS</span>
+            <span>~</span>
+            <span>Bootstrap</span>
+            <span>~</span>
+            <span>Sass</span>
+          </div>
+          <div className={styles.homeSection__stackSpanContainer}>
+            <span>JavaScript</span>
+            <span>~</span>
+            <span>React</span>
+            <span>~</span>
+            <span>Git</span>
+            <span>~</span>
+            <span>GitHub</span>
+          </div>
+
+          {/* <i className="fa-brands fa-html5"></i>
           <i className="fa-brands fa-css3-alt"></i>
           <i className="fa-brands fa-sass"></i>
           <i className="fa-brands fa-square-js"></i>
           <i className="fa-brands fa-react"></i>
           <i className="fa-brands fa-git-alt"></i>
-          <i className="fa-brands fa-square-github"></i>
+          <i className="fa-brands fa-square-github"></i> */}
         </div>
       </div>
     </div>

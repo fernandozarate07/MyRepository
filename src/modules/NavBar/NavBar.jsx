@@ -11,21 +11,21 @@ const NavBar = () => {
         className={`${styles.navBar__home} ${styles.li} ${sectionState === "home" && styles.active}
 `}
         onClick={() => setSectionState("home")}>
-        <i className="fa-solid fa-house"></i>
+        {/* <i className="fa-solid fa-house"></i> */}
         <span>INICIO</span>
       </li>
       <li
         className={`${styles.navBar__projects} ${styles.li} ${sectionState === "projects" && styles.active}
 `}
         onClick={() => setSectionState("projects")}>
-        <i className="fa-solid fa-list"></i>
+        {/* <i className="fa-solid fa-list"></i> */}
         <span>PROYECTOS</span>
       </li>
       <li
         className={`${styles.navBar__resume} ${styles.li} ${sectionState === "resume" && styles.active}
 `}
         onClick={() => setSectionState("resume")}>
-        <i className="fa-solid fa-file"></i>
+        {/* <i className="fa-solid fa-file"></i> */}
         <span>CURRICULUM</span>
       </li>
     </ul>

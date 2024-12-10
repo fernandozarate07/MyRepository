@@ -6,10 +6,10 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
     <div className={styles.project__container}>
       {/* img container */}
       <div className={styles.project_containerImg}>
-        {/* btn left */}
+        {/* btn up */}
         <div className={styles.projectSection__containerBtn}>
-          <button onClick={prevProject} className={styles.projectSection__btn}>
-            <i className="fa-solid fa-arrow-left"></i>
+          <button onClick={nextProject} className={styles.projectSection__btn}>
+            <i className="fa-solid fa-arrow-up"></i>
           </button>
         </div>
         {/* img content */}
@@ -21,10 +21,10 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
           )}
           <img src={imageUrl} alt={title} className={styles.projec__image} />
         </div>
-        {/* btn right */}
+        {/* btn down */}
         <div className={styles.projectSection__containerBtn}>
-          <button onClick={nextProject} className={styles.projectSection__btn}>
-            <i className="fa-solid fa-arrow-right"></i>
+          <button onClick={prevProject} className={styles.projectSection__btn}>
+            <i className="fa-solid fa-arrow-down"></i>
           </button>
         </div>
       </div>
@@ -35,10 +35,15 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
             <h3 className={styles.project__name}>{title}</h3>
           </a>
           <a href="#">
-            <i className={`${styles.project__github_link} fa-brands fa-square-github`}></i>
+            {/* <i className={`${styles.project__github_link} fa-brands fa-square-github`}></i> */}
+            Code
           </a>
         </div>
         <p className={styles.project__description}>{description}</p>
+        <div className={styles.projectSection__opcionBtn}>
+          <a href="#">TODOS MIS PROJECTOS</a>
+          <a href="#">DESCARGA MI CV</a>
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "Font-one";
-  src: url("/src/assets/font/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+  src: url("/src/assets/font/Cormorant/Cormorant-VariableFont_wght.ttf") format("truetype");
 }
 body {
   font-family: "Font-one", sans-serif;

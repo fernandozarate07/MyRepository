@@ -1,0 +1,52 @@
+.loader__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--white-color);
+  color: var(--black-color);
+
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.loader__fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader__text {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.fadeInText {
+  opacity: 0;
+  animation: fadeInOpacity 1s forwards;
+}
+
+.fadeInRight {
+  font-weight: 100;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeInRight 1s forwards;
+}
+
+/* Animación solo de opacidad (para el primer span) */
+@keyframes fadeInOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de fade-in con movimiento de derecha a izquierda (para el segundo span) */
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Vuelve a su posición original */
+  }
+}

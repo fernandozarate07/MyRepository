@@ -3,16 +3,17 @@
   width: 100%;
 
   display: grid;
-  grid-template-rows: 2fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 .project_containerImg {
-  padding-inline: 40px;
-  padding-top: 40px;
+  width: 100%;
+  height: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 40px;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
 }
 .projectSection__containerBtn {
   display: flex;
@@ -65,23 +66,26 @@
   color: var(--white-color);
 }
 .projec__image {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 
   object-fit: cover;
   border-radius: 10px;
+  border: 1px solid var(--black-color);
 }
 .project__info {
-  padding-inline: 40px;
-  padding-bottom: 40px;
+  width: 100%;
+  height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 40px;
+
+  display: grid;
+  grid-template-rows: 1.5fr 3fr 1.5fr;
 }
 .project__name_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .project__name {
   padding: 5px;
@@ -111,4 +115,34 @@
 .project__github_link:hover {
   color: var(--black-color);
   transform: scale(1.1);
+}
+.projectSection__opcionBtn {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-top: 1px solid var(--black-color);
+}
+.projectSection__opcionBtn a {
+  padding: 5px;
+  position: relative;
+
+  font-size: 1.2;
+  font-weight: 900;
+}
+.projectSection__opcionBtn a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--black-color);
+  transition: width 0.3s ease;
+}
+.projectSection__opcionBtn a:hover::after {
+  width: 100%;
 }

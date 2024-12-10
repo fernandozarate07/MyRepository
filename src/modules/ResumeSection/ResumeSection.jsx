@@ -126,11 +126,13 @@ const ResumeSection = () => {
               <h2 className={styles.resume__subtitle}>TECNOLOGÍAS</h2>
               <div className={styles.resume__contentStack}>
                 <div className={styles.resume__stackContainer}>
-                  <span> • HTML, CSS</span>
+                  <span> • HTML</span>
+                  <span> • CSS</span>
+                  <span> • Bootstrap</span>
                   <span> • SASS</span>
-                  <span> • JavaScript</span>
                 </div>
                 <div className={styles.resume__stackContainer}>
+                  <span> • JavaScript</span>
                   <span> • React</span>
                   <span> • Git</span>
                   <span> • GitHub</span>

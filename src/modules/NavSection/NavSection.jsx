@@ -7,7 +7,7 @@ const NavSection = () => {
       {/* portal */}
       <div className={styles.navSection__portal}>
         <div>
-          <h1 className={styles.navSection__name}>Fernando Zárate</h1>
+          <h1 className={styles.navSection__name}>FERNANDO ZÁRATE</h1>
           <p className={styles.navSection__description}>
             <span>Desarrollador Web</span>
             <span>Front End</span>
@@ -20,13 +20,16 @@ const NavSection = () => {
       {/* contact */}
       <div className={styles.navSection__contact}>
         <a href="#">
-          <i className="fa-brands fa-square-github"></i>
+          {/* <i className="fa-brands fa-square-github"></i> */}
+          GitHub
         </a>
         <a href="#">
-          <i className="fa-solid fa-envelope"></i>
+          {/* <i className="fa-solid fa-envelope"></i> */}
+          Gmail
         </a>
         <a href="#">
-          <i className="fa-brands fa-linkedin"></i>
+          {/* <i className="fa-brands fa-linkedin"></i> */}
+          Linkedin
         </a>
       </div>
     </div>

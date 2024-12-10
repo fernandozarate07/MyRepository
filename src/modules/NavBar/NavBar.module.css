@@ -7,11 +7,11 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   list-style-type: none;
-  border-top: 2px solid var(--black-color);
+  border-top: 1px solid var(--black-color);
 }
 .li {
   width: 100%;
@@ -20,24 +20,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 
-  font-size: 1.2rem;
   cursor: pointer;
 
   opacity: 0.2;
-  border: 2px solid var(--black-color);
 }
 .active {
   opacity: 1;
-  background-color: var(--black-color);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 .li i {
   font-size: 1rem;
 }
 .li span {
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
