@@ -1,4 +1,4 @@
-import ButtonArrow from "../ButtonArrow/ButtonArrow";
+import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
 import styles from "./HomeSection.module.css";
 const HomeSection = () => {
   return (
@@ -15,7 +15,7 @@ const HomeSection = () => {
           <span>desde componer una canción a</span>
           <span>una app web única.</span>
         </div>
-        <ButtonArrow />
+        <UnderlineButton section={"projects"} />
         <div className={styles.homeSection__stack}>
           <div className={styles.homeSection__stackSpanContainer}>
             <span>HTML</span>

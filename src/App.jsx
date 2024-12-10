@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,7 +33,7 @@ function App() {
   }, [sectionState]);
 
   return (
-    <div className="app__container">
+    <div className="app">
       {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
       <div className={`app__content ${isLoading ? "hidden" : "visible"}`}>
         <section className="app__left">

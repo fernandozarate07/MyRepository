@@ -7,7 +7,7 @@ const NavSection = () => {
       {/* portal */}
       <div className={styles.navSection__portal}>
         <div>
-          <h1 className={styles.navSection__name}>FERNANDO ZÁRATE</h1>
+          <h1 className={styles.navSection__name}>Fernando Zárate</h1>
           <p className={styles.navSection__description}>
             <span>Desarrollador Web</span>
             <span>Front End</span>

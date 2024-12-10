@@ -129,7 +129,7 @@ const ResumeSection = () => {
                   <span> • HTML</span>
                   <span> • CSS</span>
                   <span> • Bootstrap</span>
-                  <span> • SASS</span>
+                  <span> • Sass</span>
                 </div>
                 <div className={styles.resume__stackContainer}>
                   <span> • JavaScript</span>
