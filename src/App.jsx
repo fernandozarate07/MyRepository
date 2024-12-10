@@ -4,22 +4,17 @@ import HomeSection from "./modules/HomeSection/HomeSection.jsx";
 import ResumeSection from "./modules/ResumeSection/ResumeSection.jsx";
 import NavSection from "./modules/NavSection/NavSection.jsx";
 import ProjectSection from "./modules/ProjectSection/ProjectSection.jsx";
-import Loader from "./modules/Loader.jsx/Loader.jsx";
+import Loader from "./modules/Loader/Loader.jsx";
 import "./App.css";
 
 function App() {
+  //  el estado indica la seccion renderizada
   const { sectionState } = useContext(AppContext);
+  // indica si el loader es visible o no
   const [isLoading, setIsLoading] = useState(true);
+  // logica para activar el fadeOut al cambiar entre secciones
   const [fadeOut, setFadeOut] = useState(false);
-  const [currentSection, setCurrentSection] = useState(sectionState);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const [currentSection, setCurrentSection] = useState(sectionState); // Estado para asegurar que fadeOut se ejecute antes de renderizar la nueva sección.
 
   useEffect(() => {
     setFadeOut(true);
@@ -35,16 +30,14 @@ function App() {
   return (
     <div className="app">
       {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
-      <div className={`app__content ${isLoading ? "hidden" : "visible"}`}>
+      <div className={`app__container ${isLoading ? "invisible" : "visible"}`}>
         <section className="app__left">
           <NavSection />
         </section>
-        <section className="app__right">
-          <div className={`section ${fadeOut ? "fade-out" : ""}`}>
-            {currentSection === "home" && <HomeSection />}
-            {currentSection === "projects" && <ProjectSection />}
-            {currentSection === "resume" && <ResumeSection />}
-          </div>
+        <section className={`app__right ${fadeOut ? "app__fadeOut" : null}`}>
+          {currentSection === "home" && <HomeSection />}
+          {currentSection === "projects" && <ProjectSection />}
+          {currentSection === "resume" && <ResumeSection />}
         </section>
       </div>
     </div>

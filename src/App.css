@@ -1,56 +1,40 @@
 .app {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-  background-color: var(--white-color);
-  color: var(--black-color);
-}
 
-.app__content {
+  overflow: hidden;
+}
+.app__container {
   width: calc(100% - 80px);
   height: calc(100% - 80px);
+
   margin: 40px;
-  border: 1px solid var(--black-color);
-  border-radius: 10px;
+
   display: grid;
   grid-template-columns: 1fr 3fr;
-  transition: opacity 1.5s ease-in-out;
-}
 
-.app__content.hidden {
+  border: 1px solid var(--black-color);
+  border-radius: 10px;
+
+  transition: opacity 0.5s ease-in-out;
+}
+.app__container.invisible {
   opacity: 0;
 }
-
-.app__content.visible {
+.app__container.visible {
   opacity: 1;
 }
-
-.app__left {
+.app__left,
+.app__right {
   padding: 40px;
 }
-
 .app__right {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.app__right .section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
-.app__right .section.fade-out {
+.app__fadeOut {
   opacity: 0;
-}
-
-.app__right .section:not(.fade-out) {
-  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
