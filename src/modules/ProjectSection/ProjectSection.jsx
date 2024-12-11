@@ -12,24 +12,28 @@ const ProjectSection = () => {
       description:
         "Desarrollo de una app para gestionar tareas diarias, con funcionalidades de recordatorios, tareas pendientes y sincronización en la nube para acceso desde cualquier dispositivo.",
       imageUrl: "../../src/assets/image/one.png",
+      link: null,
     },
     {
       title: "Sitio Web Corporativo",
       description:
         "Rediseño de un sitio web para una empresa de tecnología, mejorando la experiencia del usuario con una interfaz moderna y optimización para dispositivos móviles y SEO.",
       imageUrl: "../../src/assets/image/two.png",
+      link: null,
     },
     {
       title: "E-commerce de Ropa",
       description:
         "Plataforma de comercio electrónico para la venta de ropa online, con características como pagos seguros, seguimiento de pedidos y recomendaciones personalizadas para los usuarios.",
       imageUrl: "../../src/assets/image/three.png",
+      link: null,
     },
     {
       title: "Red Social de Viajeros",
       description:
         "Red social para conectar viajeros y compartir experiencias, permitiendo a los usuarios crear itinerarios, recomendar destinos y formar grupos para viajes en conjunto.",
       imageUrl: "../../src/assets/image/four.png",
+      link: null,
     },
   ];
 
@@ -63,6 +67,7 @@ const ProjectSection = () => {
         nextProject={nextProject}
         prevProject={prevProject}
         isPaused={isPaused}
+        link={projects[currentIndex].link}
       />
     </div>
   );
