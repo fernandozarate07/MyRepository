@@ -2,13 +2,19 @@ import styles from "./UnderlineButton.module.css";
 import { useContext } from "react";
 import { AppContext } from "../AppContext/AppContext";
 
-const UnderlineButton = ({ section, content }) => {
+const UnderlineButton = ({ section, content, link }) => {
   const { setSectionState } = useContext(AppContext);
 
   return (
-    <div className={styles.btn} onClick={() => setSectionState(section)}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.btn}
+      //si no existe el parametro de section no se ejecuta setSection
+      onClick={section ? () => setSectionState(section) : null}>
       <span className={styles.span}>{content}</span>
-    </div>
+    </a>
   );
 };
 export default UnderlineButton;

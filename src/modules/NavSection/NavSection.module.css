@@ -1,27 +1,29 @@
-.navSection__container {
+.navSection {
   width: 100%;
   height: 100%;
 
   display: grid;
   grid-template-rows: 1.5fr 3fr 0.5fr;
 }
-.navSection__portal {
+.navSection__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .navSection__name {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-family: "font-one-regular";
 }
 .navSection__description {
+  padding-left: 2px;
+
   display: flex;
   flex-direction: column;
-  gap: 2px;
-
-  font-size: 1rem;
+  gap: 5px;
 }
 .navSection__copy {
   padding-bottom: 5px;
+  font-size: 0.75rem;
 }
 .navSection__contact {
   display: flex;
@@ -29,14 +31,4 @@
   align-items: center;
 
   border-top: 1px solid var(--black-color);
-}
-.navSection__contact i {
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  color: var(--gray-color);
-}
-.navSection__contact i:hover {
-  transform: scale(1.1);
-  color: var(--black-color);
 }

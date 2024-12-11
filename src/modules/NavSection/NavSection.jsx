@@ -1,11 +1,12 @@
 import NavBar from "../NavBar/NavBar";
 import styles from "./NavSection.module.css";
+import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
 
 const NavSection = () => {
   return (
-    <div className={styles.navSection__container}>
+    <div className={styles.navSection}>
       {/* portal */}
-      <div className={styles.navSection__portal}>
+      <div className={styles.navSection__info}>
         <div>
           <h1 className={styles.navSection__name}>Fernando Zárate</h1>
           <p className={styles.navSection__description}>
@@ -13,24 +14,18 @@ const NavSection = () => {
             <span>Front End</span>
           </p>
         </div>
-        <span className={styles.navSection__copy}>&copy; Fernando Zárate</span>
+        <span className={styles.navSection__copy}>&copy; {new Date().getFullYear()} Fernando Zárate</span>
       </div>
       {/* main */}
       <NavBar />
       {/* contact */}
       <div className={styles.navSection__contact}>
-        <a href="#">
-          {/* <i className="fa-brands fa-square-github"></i> */}
-          GitHub
-        </a>
-        <a href="#">
-          {/* <i className="fa-solid fa-envelope"></i> */}
-          Gmail
-        </a>
-        <a href="#">
-          {/* <i className="fa-brands fa-linkedin"></i> */}
-          Linkedin
-        </a>
+        <UnderlineButton content="GitHub" link={"https://github.com/fernandozarate07"} />
+        <UnderlineButton
+          content="Gmail"
+          link={"https://mail.google.com/mail/?view=cm&fs=1&to=zaratefernandoanibal@gmail.com&su=Hola Fer!"}
+        />
+        <UnderlineButton content="Linkedin" link={"https://www.linkedin.com/in/fernando-z%C3%A1rate-6a07482a3/"} />
       </div>
     </div>
   );
