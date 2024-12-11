@@ -16,7 +16,7 @@
   border: 1px solid var(--black-color);
   border-radius: 10px;
 
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 .app__container.invisible {
   opacity: 0;
@@ -32,9 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 .app__fadeOut {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }

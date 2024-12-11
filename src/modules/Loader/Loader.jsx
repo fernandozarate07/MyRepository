@@ -9,7 +9,7 @@ const Loader = ({ onComplete }) => {
       setFadeOut(true);
       // deja 1 segundo el fadeOut antes de cambiar el estado de isLoading
       setTimeout(onComplete, 1000);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, [onComplete]);
