@@ -6,27 +6,22 @@ const NavBar = () => {
   const { sectionState, setSectionState } = useContext(AppContext);
 
   return (
-    <ul className={styles.navBar__ul}>
+    <ul className={styles.navBar}>
       <li
-        className={`${styles.navBar__home} ${styles.li} ${sectionState === "home" && styles.active}
-`}
+        className={`${styles.li} ${sectionState === "home" && styles.active}`}
         onClick={() => setSectionState("home")}>
-        {/* <i className="fa-solid fa-house"></i> */}
-        <span>Inicio</span>
+        Inicio
       </li>
       <li
-        className={`${styles.navBar__projects} ${styles.li} ${sectionState === "projects" && styles.active}
-`}
+        className={`${styles.li} ${sectionState === "projects" && styles.active}`}
         onClick={() => setSectionState("projects")}>
         {/* <i className="fa-solid fa-list"></i> */}
-        <span>Proyectos</span>
+        Proyectos
       </li>
       <li
-        className={`${styles.navBar__resume} ${styles.li} ${sectionState === "resume" && styles.active}
-`}
+        className={`${styles.li} ${sectionState === "resume" && styles.active}`}
         onClick={() => setSectionState("resume")}>
-        {/* <i className="fa-solid fa-file"></i> */}
-        <span>Curriculum Vitae</span>
+        Curriculum Vitae
       </li>
     </ul>
   );
