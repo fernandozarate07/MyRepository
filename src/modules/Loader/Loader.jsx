@@ -3,10 +3,11 @@ import styles from "./Loader.module.css";
 
 const Loader = ({ onComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
-
+  //logica de loader
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFadeOut(true);
+      // deja 1 segundo el fadeOut antes de cambiar el estado de isLoading
       setTimeout(onComplete, 1000);
     }, 2000);
 
@@ -14,10 +15,10 @@ const Loader = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className={`${styles.loader__container} ${fadeOut ? styles.loader__fadeOut : null}`}>
+    <div className={`${styles.loader} ${fadeOut ? styles.loader__fadeOut : null}`}>
       <div className={styles.loader__text}>
-        <span className={styles.fadeInText}>Fernando Zárate</span>
-        <span className={styles.fadeInRight}>Portfolio</span>
+        <span className={styles.loader__name}>Fernando Zárate</span>
+        <span className={styles.loader__description}>Portfolio</span>
       </div>
     </div>
   );
