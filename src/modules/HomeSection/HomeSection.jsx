@@ -2,9 +2,9 @@ import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
 import styles from "./HomeSection.module.css";
 const HomeSection = () => {
   return (
-    <div className={styles.homeSection__container}>
+    <div className={styles.homeSection}>
       <div className={styles.homeSection__content}>
-        <div className={styles.homeSection__containerSpan}>
+        <div className={styles.homeSection__containerDescription}>
           <span>¡Hola! gracias por pasarte.</span>
           <span>Desarrollador Web desde 2024.</span>
           <span>Estudiante de Programación web en la UNSJ.</span>
@@ -15,9 +15,9 @@ const HomeSection = () => {
           <span>desde componer una canción a</span>
           <span>una app web única.</span>
         </div>
-        <UnderlineButton section={"projects"} />
+        <UnderlineButton section={"projects"} content="PROYECTOS" />
         <div className={styles.homeSection__stack}>
-          <div className={styles.homeSection__stackSpanContainer}>
+          <div className={styles.homeSection__containerStackSpan}>
             <span>HTML</span>
             <span>~</span>
             <span>CSS</span>
@@ -26,7 +26,7 @@ const HomeSection = () => {
             <span>~</span>
             <span>Sass</span>
           </div>
-          <div className={styles.homeSection__stackSpanContainer}>
+          <div className={styles.homeSection__containerStackSpan}>
             <span>JavaScript</span>
             <span>~</span>
             <span>React</span>
@@ -35,14 +35,6 @@ const HomeSection = () => {
             <span>~</span>
             <span>GitHub</span>
           </div>
-
-          {/* <i className="fa-brands fa-html5"></i>
-          <i className="fa-brands fa-css3-alt"></i>
-          <i className="fa-brands fa-sass"></i>
-          <i className="fa-brands fa-square-js"></i>
-          <i className="fa-brands fa-react"></i>
-          <i className="fa-brands fa-git-alt"></i>
-          <i className="fa-brands fa-square-github"></i> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-.homeSection__container {
+.homeSection {
   width: 100%;
   height: 100%;
 
@@ -11,31 +11,25 @@
   grid-template-rows: 1fr auto auto;
   gap: 20px;
 }
-.homeSection__containerSpan {
-  padding: 20px;
-
+.homeSection__containerDescription {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 
   text-align: center;
-}
-.homeSection__content span {
-  font-size: 1rem;
 }
 .homeSection__stack {
   width: 100%;
 
-  padding: 5px;
+  padding-top: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-top: 1px solid var(--black-color);
+  font-family: "Font-one-regular";
 }
-.homeSection__stack i {
-  font-size: 2rem;
-}
-.homeSection__stackSpanContainer {
+.homeSection__containerStackSpan {
   display: flex;
   justify-content: space-between;
   align-items: center;
