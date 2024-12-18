@@ -2,7 +2,7 @@ import styles from "./UnderlineButton.module.css";
 import { useContext } from "react";
 import { AppContext } from "../AppContext/AppContext";
 
-const UnderlineButton = ({ section, content, link }) => {
+const UnderlineButton = ({ section, content, linkApp, link }) => {
   const { setSectionState } = useContext(AppContext);
 
   return (

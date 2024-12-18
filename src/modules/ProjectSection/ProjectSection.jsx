@@ -2,40 +2,55 @@ import { useState, useEffect } from "react";
 import styles from "./ProjectSection.module.css";
 import Project from "../Project/Project";
 
-import imageOne from "../../assets/image/one.png";
-import imageTwo from "../../assets/image/two.png";
-import imageThree from "../../assets/image/three.png";
-import imageFour from "../../assets/image/four.png";
+import imgOne from "../../assets/image/one.png";
+// import imageTwo from "../../assets/image/two.png";
+import imgThree from "../../assets/image/three.png";
+import imgFour from "../../assets/image/four.png";
 
 const ProjectSection = () => {
   const projects = [
     {
-      title: "Aplicación Móvil",
-      description:
-        "Desarrollo de una app para gestionar tareas diarias, con funcionalidades de recordatorios, tareas pendientes y sincronización en la nube para acceso desde cualquier dispositivo.",
-      imageUrl: imageOne,
-      link: null,
+      imageUrl: imgOne,
+      title: "TrueTone",
+      description: [
+        "TrueTone es una app de afinador simple y precisa para guitarra, bajo y ukulele.",
+        "Es una Single Page Application (SPA) desarrollada con React.",
+        "Utiliza la Web Audio API para capturar y procesar el sonido, y es completamente responsive para una experiencia óptima en cualquier dispositivo.",
+        "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Web Audio API",
+      ],
+      linkApp: "https://tuner-app-mu.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/tuner-app",
+    },
+    // {
+    //   imageUrl: "",
+    //   title: "",
+    //   description: "",
+    //   linkApp: "",
+    //   linkCode: "",
+    // },
+    {
+      imageUrl: imgThree,
+      title: "Simple Weather",
+      description: [
+        "Simple Weather es una aplicación web intuitiva y minimalista que permite conocer el clima de cualquier ciudad con solo unos clics. Utiliza la API de Visual Crossing para proporcionar datos precisos y actualizados del clima.",
+        "La app está desarrollada con una arquitectura VCM (Vista-Controlador-Modelo), lo que garantiza una estructura ordenada y eficiente. La lógica de programación y el código de renderizado están perfectamente separados y se conectan a través del Controlador, que gestiona la interacción con el DOM.",
+        "Tecnologias: HTML ~ CSS ~ Vanilla JS ~ WebPack",
+      ],
+      linkApp: "https://simple-weather-omega.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/weather-app",
     },
     {
-      title: "Sitio Web Corporativo",
-      description:
-        "Rediseño de un sitio web para una empresa de tecnología, mejorando la experiencia del usuario con una interfaz moderna y optimización para dispositivos móviles y SEO.",
-      imageUrl: imageTwo,
-      link: null,
-    },
-    {
-      title: "E-commerce de Ropa",
-      description:
-        "Plataforma de comercio electrónico para la venta de ropa online, con características como pagos seguros, seguimiento de pedidos y recomendaciones personalizadas para los usuarios.",
-      imageUrl: imageThree,
-      link: null,
-    },
-    {
-      title: "Red Social de Viajeros",
-      description:
-        "Red social para conectar viajeros y compartir experiencias, permitiendo a los usuarios crear itinerarios, recomendar destinos y formar grupos para viajes en conjunto.",
-      imageUrl: imageFour,
-      link: null,
+      imageUrl: imgFour,
+      title: "My Portfolio",
+      description: [
+        "Si ya lo sé, es redundante colocar aquí la web que ya estás utilizando. Sin embargo, quería comentarte un poco sobre el proceso detrás de su desarrollo.",
+        "Este portafolio está diseñado como una Single Page Application (SPA). Utilizando React, ofrece una navegación fluida y rápida. Implementa Context API para una gestión de estado global, para la descarga del CV utilicé Canvas y jsPDF.",
+        "Cuenta con un Responsive Design que se adapta perfectamente a distintos dispositivos.",
+        "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
+      ],
+
+      linkApp: "https://simple-weather-omega.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/weather-app",
     },
   ];
 
@@ -90,7 +105,8 @@ const ProjectSection = () => {
         nextProject={nextProject}
         prevProject={prevProject}
         isPaused={isPaused}
-        link={projects[currentIndex].link}
+        linkApp={projects[currentIndex].linkApp}
+        linkCode={projects[currentIndex].linkCode}
       />
     </div>
   );

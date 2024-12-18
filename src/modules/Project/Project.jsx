@@ -1,7 +1,7 @@
 import styles from "./Project.module.css";
 import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
 
-const Project = ({ title, description, imageUrl, nextProject, prevProject, isPaused, link }) => {
+const Project = ({ title, description, imageUrl, nextProject, prevProject, isPaused, linkApp, linkCode }) => {
   // const { setSectionState } = useContext(AppContext);
   return (
     // container
@@ -27,16 +27,21 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
         </button>
       </div>
       {/* info */}
-      <div className={styles.project__info}>
+      <div className={styles.project__right}>
         <div className={styles.project__name}>
-          <UnderlineButton content={title} link={link} />
+          <UnderlineButton content={title} link={linkApp} />
           <span className={styles.project__codebase}>
-            <UnderlineButton content={"Code"} link={link} />
+            <UnderlineButton content={"Code"} link={linkCode} />
           </span>
         </div>
-        <p className={styles.project__description}>{description}</p>
+        <div className={styles.project__descriptionContainer}>
+          <p className={styles.project__description}>{description[0]}</p>
+          <p className={styles.project__description}>{description[1]}</p>
+          <p className={styles.project__description}>{description[2]}</p>
+          <p className={styles.project__description}>{description[3]}</p>
+        </div>
         <div className={styles.project__opcion}>
-          <UnderlineButton content={"TODOS LOS PROYECTOS"} link={link} />
+          <UnderlineButton content={"OTROS PROYECTOS"} link={"https://github.com/fernandozarate07"} />
           <UnderlineButton content={"DESCARGA MI CV"} section={"resume"} />
         </div>
       </div>

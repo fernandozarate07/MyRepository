@@ -17,6 +17,8 @@
   gap: 5px;
 
   text-align: center;
+  border-bottom: 1px solid var(--black-color);
+  padding-bottom: 20px;
 }
 .homeSection__stack {
   width: 100%;
