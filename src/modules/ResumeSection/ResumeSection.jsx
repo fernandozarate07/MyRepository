@@ -45,8 +45,8 @@ const ResumeSection = () => {
               <p className={styles.resume__description}>Desarrollador Web</p>
             </div>
             <div className={styles.resume__contact}>
-              <i className="fa-solid fa-f"></i>
-              <span>Aqui el enlace de mi portafolio</span>
+              <i className="fa-solid fa-house"></i>
+              <span>https://my-repository-gules-one.vercel.app/</span>
               <i className="fa-solid fa-mobile-screen-button"></i>
               <span>+54 264 6271151</span>
               <i className="fa-solid fa-envelope"></i>

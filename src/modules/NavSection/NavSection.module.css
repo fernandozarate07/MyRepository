@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 80px;
 }
 .navSection__name {
   font-size: 1.5rem;
@@ -52,6 +52,7 @@
   .navSection__info {
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
   .navSection__description {
     gap: 0;
