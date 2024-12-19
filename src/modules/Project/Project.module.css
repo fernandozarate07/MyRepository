@@ -1,5 +1,5 @@
 .project {
-  padding-inline: 100px;
+  margin-inline: 100px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,7 +46,6 @@
   justify-content: center;
   align-items: center;
 
-  border-radius: 50%;
   color: var(--black-color);
   background-color: var(--white-color);
 }
@@ -96,9 +95,9 @@
   .project {
     max-height: 800px;
     margin-block: auto;
-    gap: 50px;
+    margin-inline: 50px;
 
-    padding-inline: 50px;
+    gap: 50px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -106,7 +105,8 @@
 @media (max-width: 576px) {
   .project {
     max-height: 600px;
-    padding-inline: 10px;
+    margin-inline: 10px;
+
     gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;

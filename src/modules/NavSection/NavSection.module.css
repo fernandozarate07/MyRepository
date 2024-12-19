@@ -39,13 +39,11 @@
   font-size: 0.75rem;
 }
 
-/* Estilos para 992px */
 @media (max-width: 992px) {
   .navSection {
     padding-right: 5px;
   }
 }
-/* Estilos para 576px */
 @media (max-width: 576px) {
   .navSection {
     border: none;

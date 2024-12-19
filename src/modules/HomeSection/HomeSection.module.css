@@ -27,7 +27,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: "Font-one-regular";
+
+  font-weight: 400;
 }
 .homeSection__containerStackSpan {
   display: flex;

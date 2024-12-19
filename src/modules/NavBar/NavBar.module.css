@@ -8,7 +8,7 @@
 
   list-style-type: none;
   border-top: 1px solid var(--black-color);
-  font-weight: 800;
+  font-weight: 400;
 }
 .li {
   width: 100%;
@@ -25,7 +25,6 @@
 .active {
   opacity: 1;
 }
-/* Estilos para 576px */
 @media (max-width: 576px) {
   .navBar {
     padding-block: 5px;

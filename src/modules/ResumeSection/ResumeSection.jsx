@@ -41,8 +41,8 @@ const ResumeSection = () => {
           {/* portada */}
           <div className={styles.resume__portada}>
             <div className={styles.resume_nameContainer}>
-              <h1 className={styles.resume__name}>FERNANDO ZÁRATE</h1>
-              <p className={styles.resume__description}>Desarrollador Web Front End</p>
+              <h1 className={styles.resume__name}>Fernando Zárate</h1>
+              <p className={styles.resume__description}>Desarrollador Web</p>
             </div>
             <div className={styles.resume__contact}>
               <i className="fa-solid fa-f"></i>

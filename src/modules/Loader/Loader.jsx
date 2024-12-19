@@ -15,7 +15,7 @@ const Loader = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className={`${styles.loader} ${fadeOut ? styles.loader__fadeOut : null}`}>
+    <div className={`${styles.loader} ${fadeOut ? "invisible" : "visible"}`}>
       <div className={styles.loader__text}>
         <span className={styles.loader__name}>Fernando Zárate</span>
         <span className={styles.loader__description}>Portfolio</span>

@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
 
-  opacity: 1;
   transition: opacity 1s ease;
 }
 .loader__text {
@@ -16,34 +15,28 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-size: 2rem;
-  font-family: "font-one-regular";
 }
 
 .loader__name {
   opacity: 0;
   animation: fadeInOpacity 1s forwards;
+  font-size: var(--l);
+  font-weight: 400;
 }
 
 .loader__description {
-  font-weight: 100;
   opacity: 0;
   transform: translateX(100px);
   animation: fadeInRight 1s forwards;
-  font-family: "font-one-light";
-  font-size: 1.2rem;
-}
-.loader__fadeOut {
-  opacity: 0;
-  pointer-events: none;
-}
 
+  font-weight: 100;
+  font-size: var(--m);
+}
 @keyframes fadeInOpacity {
   to {
     opacity: 1;
   }
 }
-
 @keyframes fadeInRight {
   to {
     opacity: 1;

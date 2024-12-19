@@ -93,6 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 .resume__sectionExperience {
   display: flex;
@@ -151,9 +152,6 @@
   justify-content: space-around;
   gap: 10px;
 }
-@media (max-width: 992px) {
-}
-/* Estilos para 576px */
 @media (max-width: 576px) {
   .printContainer {
     max-width: 520px;
