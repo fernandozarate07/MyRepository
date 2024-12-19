@@ -2,13 +2,15 @@
   height: 100vh;
   width: 100vw;
 
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .app__container {
+  padding: 40px 0 40px 40px;
+
   width: calc(100% - 80px);
   height: calc(100% - 80px);
-
-  margin: 40px;
 
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -18,23 +20,28 @@
 
   transition: opacity 0.25s ease-in-out;
 }
-.app__container.invisible {
-  opacity: 0;
-}
-.app__container.visible {
-  opacity: 1;
-}
-.app__left,
-.app__right {
-  padding: 40px;
-}
 .app__right {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 0.25s ease-in-out;
 }
-.app__fadeOut {
-  opacity: 0;
-  transition: opacity 0.25s ease-in-out;
+@media (max-width: 992px) {
+  .app__container {
+    padding: 20px 0 20px 20px;
+
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+  }
+}
+@media (max-width: 576px) {
+  .app__container {
+    padding: 10px;
+
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+  }
 }

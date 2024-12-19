@@ -34,7 +34,7 @@ function App() {
         <section className="app__left">
           <NavSection />
         </section>
-        <section className={`app__right ${fadeOut ? "app__fadeOut" : null}`}>
+        <section className={`app__right ${fadeOut ? "invisible" : "visible"}`}>
           {currentSection === "home" && <HomeSection />}
           {currentSection === "projects" && <ProjectSection />}
           {currentSection === "resume" && <ResumeSection />}

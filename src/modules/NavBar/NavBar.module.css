@@ -8,7 +8,7 @@
 
   list-style-type: none;
   border-top: 1px solid var(--black-color);
-  font-family: "font-one-regular";
+  font-weight: 800;
 }
 .li {
   width: 100%;
@@ -24,4 +24,24 @@
 }
 .active {
   opacity: 1;
+}
+/* Estilos para 576px */
+@media (max-width: 576px) {
+  .navBar {
+    padding-block: 5px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: var(--s);
+  }
+  .li {
+    height: auto;
+
+    align-items: center;
+
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+  }
 }

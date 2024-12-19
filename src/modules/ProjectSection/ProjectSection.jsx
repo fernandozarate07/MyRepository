@@ -101,7 +101,7 @@ const ProjectSection = () => {
 
   return (
     <div
-      className={`${styles.projectSection} ${fadeOut ? styles.fadeOut : null}`}
+      className={`${styles.projectSection} ${fadeOut ? "invisible" : "visible"}`}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}>
       <Project

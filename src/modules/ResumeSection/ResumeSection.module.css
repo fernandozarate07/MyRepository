@@ -1,5 +1,6 @@
 .resume {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,7 @@
   grid-template-rows: 1fr 2fr 3fr 2fr;
   gap: 20px;
 
-  font-size: 0.5rem;
+  font-size: var(--xs);
   line-height: 1.4;
 }
 .resume__portada {
@@ -149,4 +150,16 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 10px;
+}
+@media (max-width: 992px) {
+}
+/* Estilos para 576px */
+@media (max-width: 576px) {
+  .printContainer {
+    max-width: 520px;
+    width: 100%;
+  }
+  .resume__container {
+    gap: 10px;
+  }
 }

@@ -1,26 +1,37 @@
 /* var */
 
 :root {
+  /* colors */
   --black-color: #212529;
   --white-color: #f8f9fa;
   --gray-color: #e9ecef;
+  /* font size */
+
+  --xs: 0.5rem;
+  --s: 0.75rem;
+  --m: 1;
+  --l: 1.5rem;
 }
 /* font */
 
 @font-face {
-  font-family: "Font-one-light";
+  font-family: "Font-one";
   src: url("/src/assets/font/Gothic_A1/GothicA1-Light.ttf") format("truetype");
+  font-weight: 100;
 }
 @font-face {
-  font-family: "Font-one-regular";
+  font-family: "Font-one";
   src: url("/src/assets/font/Gothic_A1/GothicA1-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Font-one-bold";
+  font-family: "Font-one";
   src: url("/src/assets/font/Gothic_A1/GothicA1-Bold.ttf") format("truetype");
+  font-weight: 800;
 }
 body {
-  font-family: "Font-one-light", sans-serif;
+  font-family: "Font-one", sans-serif;
+  font-weight: 100;
   color: var(--black-color);
   background-color: var(--white-color);
 }
@@ -34,4 +45,16 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+}
+.invisible {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.display {
+  display: none;
+}
+.display-flex {
+  display: flex;
 }
