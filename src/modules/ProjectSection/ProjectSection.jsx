@@ -3,7 +3,7 @@ import styles from "./ProjectSection.module.css";
 import Project from "../Project/Project";
 
 import imgOne from "../../assets/image/one.png";
-// import imageTwo from "../../assets/image/two.png";
+import imgTwo from "../../assets/image/two.png";
 import imgThree from "../../assets/image/three.png";
 import imgFour from "../../assets/image/four.png";
 
@@ -21,13 +21,19 @@ const ProjectSection = () => {
       linkApp: "https://tuner-app-mu.vercel.app/",
       linkCode: "https://github.com/fernandozarate07/tuner-app",
     },
-    // {
-    //   imageUrl: "",
-    //   title: "",
-    //   description: "",
-    //   linkApp: "",
-    //   linkCode: "",
-    // },
+    {
+      imageUrl: imgTwo,
+      title: "Sketchbox",
+      description: [
+        "Sketchbox es una app de dibujo sencilla y funcional inspirada en el clásico Paint.",
+        "Desarrollada como un proyecto de aprendizaje, su lógica y diseño se implementaron únicamente con Flexbox y JavaScript puro.",
+        "Cuenta con un algoritmo personalizado para asegurar que la cuadrícula se adapte perfectamente al contenedor sin desbordarse, resolviendo un desafío que normalmente sería más sencillo con CSS Grid.",
+        "Este proyecto destaca por su enfoque en la resolución de problemas y el uso creativo de Flexbox para lograr su funcionalidad",
+        "Tecnologías: HTML ~ CSS (Flexbox) ~ Vanilla JS",
+      ],
+      linkApp: "https://etch-a-sketch-kappa-six.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/Etch-a-Sketch",
+    },
     {
       imageUrl: imgThree,
       title: "Simple Weather",
