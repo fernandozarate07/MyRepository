@@ -105,17 +105,18 @@
 }
 @media (max-width: 576px) {
   .project {
-    max-height: 600px;
+    max-height: 400px;
     margin-inline: 10px;
+    margin-block: 10px;
 
     gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
   }
   .project_left {
     gap: 5px;
   }
   .project__img {
-    max-height: 200px;
+    max-height: 150px;
   }
 }

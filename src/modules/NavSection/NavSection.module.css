@@ -48,6 +48,7 @@
   .navSection {
     border: none;
     padding: 0;
+    grid-template-rows: repeat(3, auto);
   }
   .navSection__info {
     align-items: center;

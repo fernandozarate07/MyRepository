@@ -23,6 +23,17 @@ const ProjectSection = () => {
     },
     {
       imageUrl: imgTwo,
+      title: "Simple Weather",
+      description: [
+        "Simple Weather es una aplicación web intuitiva y minimalista que permite conocer el clima de cualquier ciudad con solo unos clics. Utiliza la API de Visual Crossing para proporcionar datos precisos y actualizados del clima.",
+        "La app está desarrollada con una arquitectura VCM (Vista-Controlador-Modelo), lo que garantiza una estructura ordenada y eficiente. La lógica de programación y el código de renderizado están perfectamente separados y se conectan a través del Controlador, que gestiona la interacción con el DOM.",
+        "Tecnologias: HTML ~ CSS ~ Vanilla JS ~ WebPack",
+      ],
+      linkApp: "https://simple-weather-omega.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/weather-app",
+    },
+    {
+      imageUrl: imgThree,
       title: "Sketchbox",
       description: [
         "Sketchbox es una app de dibujo sencilla y funcional inspirada en el clásico Paint.",
@@ -35,17 +46,6 @@ const ProjectSection = () => {
       linkCode: "https://github.com/fernandozarate07/Etch-a-Sketch",
     },
     {
-      imageUrl: imgThree,
-      title: "Simple Weather",
-      description: [
-        "Simple Weather es una aplicación web intuitiva y minimalista que permite conocer el clima de cualquier ciudad con solo unos clics. Utiliza la API de Visual Crossing para proporcionar datos precisos y actualizados del clima.",
-        "La app está desarrollada con una arquitectura VCM (Vista-Controlador-Modelo), lo que garantiza una estructura ordenada y eficiente. La lógica de programación y el código de renderizado están perfectamente separados y se conectan a través del Controlador, que gestiona la interacción con el DOM.",
-        "Tecnologias: HTML ~ CSS ~ Vanilla JS ~ WebPack",
-      ],
-      linkApp: "https://simple-weather-omega.vercel.app/",
-      linkCode: "https://github.com/fernandozarate07/weather-app",
-    },
-    {
       imageUrl: imgFour,
       title: "My Portfolio",
       description: [
@@ -55,8 +55,8 @@ const ProjectSection = () => {
         "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
       ],
 
-      linkApp: "https://simple-weather-omega.vercel.app/",
-      linkCode: "https://github.com/fernandozarate07/weather-app",
+      linkApp: "https://my-repository-gules-one.vercel.app/",
+      linkCode: "https://github.com/fernandozarate07/MyRepository",
     },
   ];
 
