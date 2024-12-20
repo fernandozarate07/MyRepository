@@ -54,7 +54,7 @@ const ProjectSection = () => {
         "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
       ],
 
-      linkApp: "www.fernandozarate.website",
+      linkApp: "",
       linkCode: "https://github.com/fernandozarate07/MyRepository",
     },
   ];
