@@ -5,11 +5,12 @@
   --gray-color: #e9ecef;
   /* font size */
 
-  --xs: 0.5rem;
-  --s: 0.75rem;
-  --m: 1;
-  --l: 1.5rem;
-  --xl: 2rem;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 24px;
+  --xxl: 28px;
 }
 
 /* font */

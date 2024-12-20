@@ -32,12 +32,11 @@
 .resume__container {
   width: 100%;
   height: 100%;
-
   padding: 20px;
 
   display: grid;
   grid-template-rows: 1fr 2fr 3fr 2fr;
-  gap: 20px;
+  gap: 10px;
 
   font-size: var(--xs);
   line-height: 1.4;
@@ -52,16 +51,16 @@
   gap: 10px;
 }
 .resume__name {
-  font-size: 1.25rem;
+  font-size: var(--l);
 }
 .resume__description {
-  font-size: 0.75rem;
+  font-size: var(--s);
 }
 .resume__contact {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(5 1fr);
-  gap: 5px;
+  gap: 2px;
   justify-content: center;
   align-items: center;
 }
@@ -72,7 +71,7 @@
   align-items: center;
 }
 .resume__subtitle {
-  font-size: 0.75rem;
+  font-size: var(--s);
 }
 .section {
   padding-block: 10px;
@@ -93,15 +92,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
 }
 .resume__sectionExperience {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .resume__sectionExperience h3 {
-  font-size: 0.6rem;
+  font-size: var(--xs);
 }
 /* education & stack */
 .resume__containerEducationStack {
@@ -129,8 +127,8 @@
   align-items: center;
 }
 .resume__educationDate {
-  font-weight: 900;
-  font-size: 0.4rem;
+  font-size: 6px;
+  font-weight: 800;
 }
 .containerEducationSpan {
   display: flex;
@@ -154,10 +152,25 @@
 }
 @media (max-width: 576px) {
   .printContainer {
-    max-width: 520px;
-    width: 100%;
+    max-height: 400px;
+    width: 282px;
   }
   .resume__container {
-    gap: 10px;
+    font-size: 4px;
+  }
+  .resume_nameContainer {
+    gap: 5px;
+  }
+  .resume__name {
+    font-size: var(--s);
+  }
+  .resume__description {
+    font-size: var(--xs);
+  }
+  .resume__subtitle {
+    font-size: 6px;
+  }
+  .resume__sectionExperience h3 {
+    font-size: 6px;
   }
 }
