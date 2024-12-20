@@ -50,9 +50,9 @@ const ResumeSection = () => {
               <i className="fa-solid fa-mobile-screen-button"></i>
               <span>+54 264 6271151</span>
               <i className="fa-solid fa-envelope"></i>
-              <span>zaratefernandoanibal@gmail.com</span>
+              <span>fernandozarate.dev@gmail.com</span>
               <i className="fa-brands fa-linkedin"></i>
-              <span>www.linkedin.com/in/fernando-zárate-6a07482a3</span>
+              <span>https://www.linkedin.com/in/fernandozaratedev/</span>
               <i className="fa-solid fa-location-dot"></i>
               <span>San Juan, Argentina </span>
             </div>
