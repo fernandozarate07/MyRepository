@@ -173,4 +173,7 @@
   .resume__sectionExperience h3 {
     font-size: 6px;
   }
+  .resume__educationDate {
+    font-size: 4px;
+  }
 }
