@@ -120,6 +120,7 @@
   }
   .project__img {
     max-height: 100px;
+    max-width: 200px;
   }
   .project__opcion {
     padding-top: 5px;
