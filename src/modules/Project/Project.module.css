@@ -128,4 +128,8 @@
   .project__right {
     gap: 5px;
   }
+  .projectSection__stopBtn {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
 }
