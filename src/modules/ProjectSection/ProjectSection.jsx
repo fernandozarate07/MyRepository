@@ -54,7 +54,7 @@ const ProjectSection = () => {
         "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
       ],
 
-      linkApp: "https://my-repository-gules-one.vercel.app/",
+      linkApp: "www.fernandozarate.website",
       linkCode: "https://github.com/fernandozarate07/MyRepository",
     },
   ];
