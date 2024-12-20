@@ -66,15 +66,15 @@ const ProjectSection = () => {
   useEffect(() => {
     if (isPaused) return;
 
-    //activa el fadeOut .25s antes de que cambie de proyecto
+    //activa el fadeOut .5s antes de que cambie de proyecto
     const timer = setTimeout(() => {
       setFadeOut(true);
-    }, 2750);
+    }, 3500);
     //cambia el intervalo a los 3s
     const intervalId = setInterval(() => {
       setFadeOut(false);
       setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-    }, 3000);
+    }, 4000);
 
     return () => {
       clearTimeout(timer);

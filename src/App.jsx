@@ -22,7 +22,7 @@ function App() {
     const timer = setTimeout(() => {
       setCurrentSection(sectionState);
       setFadeOut(false);
-    }, 250);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [sectionState]);
