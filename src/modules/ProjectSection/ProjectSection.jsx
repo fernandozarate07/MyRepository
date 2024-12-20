@@ -53,7 +53,6 @@ const ProjectSection = () => {
         "Cuenta con un Responsive Design que se adapta perfectamente a distintos dispositivos.",
         "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
       ],
-
       linkApp: "",
       linkCode: "https://github.com/fernandozarate07/MyRepository",
     },

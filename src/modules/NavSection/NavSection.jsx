@@ -25,7 +25,7 @@ const NavSection = () => {
           content="Gmail"
           link={"https://mail.google.com/mail/?view=cm&fs=1&to=zaratefernandoanibal@gmail.com&su=Hola Fer!"}
         />
-        <UnderlineButton content="Linkedin" link={"https://www.linkedin.com/in/fernando-z%C3%A1rate-6a07482a3/"} />
+        <UnderlineButton content="Linkedin" link={"https://www.linkedin.com/in/fernandozaratedev/"} />
       </div>
     </div>
   );
