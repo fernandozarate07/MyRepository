@@ -20,7 +20,7 @@
 .loader__name {
   opacity: 0;
   animation: fadeInOpacity 1s forwards;
-  font-size: var(--l);
+  font-size: var(--xl);
   font-weight: 400;
 }
 
@@ -30,7 +30,7 @@
   animation: fadeInRight 1s forwards;
 
   font-weight: 100;
-  font-size: var(--m);
+  font-size: var(--l);
 }
 @keyframes fadeInOpacity {
   to {
