@@ -31,6 +31,15 @@ const HomeSection = () => {
             <span>~</span>
             <span>React</span>
             <span>~</span>
+            <span>WordPress</span>
+            <span>~</span>
+            <span>Rank Math</span>
+          </div>
+          <div className={styles.homeSection__containerStackSpan}>
+            <span>WooCommerce</span>
+            <span>~</span>
+            <span>Elementor</span>
+            <span>~</span>
             <span>Git</span>
             <span>~</span>
             <span>GitHub</span>

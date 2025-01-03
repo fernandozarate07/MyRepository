@@ -6,6 +6,7 @@ import imgOne from "../../assets/image/one.png";
 import imgTwo from "../../assets/image/two.png";
 import imgThree from "../../assets/image/three.png";
 import imgFour from "../../assets/image/four.png";
+import imgFive from "../../assets/image/five.png";
 
 const ProjectSection = () => {
   const projects = [
@@ -34,6 +35,18 @@ const ProjectSection = () => {
     },
     {
       imageUrl: imgThree,
+      title: "Protoprogramadores",
+      description: [
+        "Protoprogramadores es una agencia digital que crea y mantiene sitios web profesionales para negocios y emprendedores.",
+        "Ofrecemos servicios como portafolios, blogs, e-commerce y landing pages personalizados.",
+        "Trabajamos con tecnologías modernas y WordPress para garantizar diseños únicos y funcionales.",
+        "Tecnologías:  HTML ~ CSS ~ React ~ WordPress ~ WooCommerce ~ Rank Math",
+      ],
+      linkApp: "https://protoprogramadores.com",
+      linkCode: "none",
+    },
+    {
+      imageUrl: imgFour,
       title: "Sketchbox",
       description: [
         "Sketchbox es una app de dibujo inspirada en el clásico Paint.",
@@ -45,7 +58,7 @@ const ProjectSection = () => {
       linkCode: "https://github.com/fernandozarate07/Etch-a-Sketch",
     },
     {
-      imageUrl: imgFour,
+      imageUrl: imgFive,
       title: "My Portfolio",
       description: [
         "Si ya lo sé, es redundante colocar aquí la web que ya estás utilizando. Sin embargo, quería comentarte un poco sobre el proceso detrás de su desarrollo.",
@@ -66,9 +79,10 @@ const ProjectSection = () => {
     if (isPaused) return;
 
     //activa el fadeOut .5s antes de que cambie de proyecto
-    const timer = setTimeout(() => {
-      setFadeOut(true);
-    }, 3500);
+
+    // const timer = setTimeout(() => {
+    //   setFadeOut(true);
+    // }, 3500);
     //cambia el intervalo a los 3s
     const intervalId = setInterval(() => {
       setFadeOut(false);
@@ -76,7 +90,7 @@ const ProjectSection = () => {
     }, 4000);
 
     return () => {
-      clearTimeout(timer);
+      // clearTimeout(timer);
       clearInterval(intervalId);
     };
   }, [currentIndex, isPaused]);

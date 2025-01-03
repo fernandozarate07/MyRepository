@@ -82,11 +82,10 @@ const ResumeSection = () => {
             <div className={styles.resume__sectionExperience}>
               <h3>Experiencia como Programador</h3>
               <p>
-                Aunque aún no tengo experiencia laboral formal como programador, estoy buscando activamente mi primera
-                oportunidad profesional en el área. Sin embargo, he trabajado en diversos proyectos personales que
-                puedes explorar en mi portafolio web (puedes encontrar el enlace en la sección de contacto). Estos
-                proyectos reflejan mi capacidad para aplicar mis conocimientos de programación web en situaciones
-                prácticas y mi dedicación por seguir aprendiendo y mejorando.
+                Soy fundador de una agencia de desarrollo web, Protoprogramadores, donde me desempeño como desarrollador
+                frontend y especialista en WordPress. Mi portafolio web (enlace disponible en la sección de contacto)
+                reúne proyectos que demuestran mi capacidad para aplicar conocimientos de programación web en contextos
+                prácticos, así como mi compromiso con el aprendizaje continuo y la excelencia profesional.
               </p>
             </div>
             <div className={styles.resume__sectionExperience}>
