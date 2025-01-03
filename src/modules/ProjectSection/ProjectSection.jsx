@@ -38,8 +38,7 @@ const ProjectSection = () => {
       title: "Protoprogramadores",
       description: [
         "Protoprogramadores es una agencia digital que crea y mantiene sitios web profesionales para negocios y emprendedores.",
-        "Ofrecemos servicios como portafolios, blogs, e-commerce y landing pages personalizados.",
-        "Trabajamos con tecnologías modernas y WordPress para garantizar diseños únicos y funcionales.",
+        "Fue creada con WordPress utilizando, WooCommerce para crear la tienda online.",
         "Tecnologías:  HTML ~ CSS ~ React ~ WordPress ~ WooCommerce ~ Rank Math",
       ],
       linkApp: "https://protoprogramadores.com",
@@ -78,19 +77,19 @@ const ProjectSection = () => {
   useEffect(() => {
     if (isPaused) return;
 
-    //activa el fadeOut .5s antes de que cambie de proyecto
+    // activa el fadeOut .5s antes de que cambie de proyecto
 
-    // const timer = setTimeout(() => {
-    //   setFadeOut(true);
-    // }, 3500);
-    //cambia el intervalo a los 3s
+    const timer = setTimeout(() => {
+      setFadeOut(true);
+    }, 3500);
+    // cambia el intervalo a los 3s
     const intervalId = setInterval(() => {
       setFadeOut(false);
       setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
     }, 4000);
 
     return () => {
-      // clearTimeout(timer);
+      clearTimeout(timer);
       clearInterval(intervalId);
     };
   }, [currentIndex, isPaused]);
