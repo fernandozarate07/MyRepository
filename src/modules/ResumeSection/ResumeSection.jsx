@@ -129,12 +129,14 @@ const ResumeSection = () => {
                   <span> • CSS</span>
                   <span> • Bootstrap</span>
                   <span> • Sass</span>
+                  <span> • WordPress</span>
                 </div>
                 <div className={styles.resume__stackContainer}>
                   <span> • JavaScript</span>
                   <span> • React</span>
                   <span> • Git</span>
                   <span> • GitHub</span>
+                  <span> • WooCommerce</span>
                 </div>
               </div>
             </div>
