@@ -9,19 +9,18 @@
 }
 .navSection__logo {
   display: flex;
-  justify-content: center;
-  align-self: center;
 }
 .navSection__contact {
+  padding-bottom: 20px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  border-top: 1px solid var(--black-color);
   font-size: 0.75rem;
 }
 .navSection__copy {
-  padding: 10px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 0.75rem;
 }

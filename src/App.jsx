@@ -10,19 +10,7 @@ import Loader from "./modules/Loader/Loader.jsx";
 import "./App.css";
 
 function App() {
-  const { sectionState } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
-  const [fadeOut, setFadeOut] = useState(false);
-
-  useEffect(() => {
-    setFadeOut(true);
-
-    const timer = setTimeout(() => {
-      setFadeOut(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, [sectionState]);
 
   return (
     <Router>
@@ -32,13 +20,12 @@ function App() {
           <section className="app__left">
             <NavSection />
           </section>
-          <section className={`app__right ${fadeOut ? "invisible" : "visible"}`}>
+          <section>
             <Routes>
               <Route path="/" element={<HomeSection />} />
               <Route path="/projects" element={<ProjectSection />} />
-              <Route path="/aboutme" element={<ResumeSection />} />{" "}
               <Route path="/aboutme" element={<ResumeSection />} />
-              <Route path="/aboutme" element={<ContactSection />} />
+              <Route path="/contact" element={<ContactSection />} />
             </Routes>
           </section>
         </div>

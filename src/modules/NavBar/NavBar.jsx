@@ -3,30 +3,26 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
+    <nav>
       <ul className={styles.navBar}>
-        <li>
-          <NavLink to="/" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
-            Inicio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
-            Proyectos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/aboutme" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
-            Sobre mi
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contactme" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
-            Contactame
-          </NavLink>
-        </li>
+        <NavLink to="/" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
+          <i className={`fa-solid fa-house ${styles.icon}`}></i>
+          <span>INICIO</span>
+        </NavLink>
+        <NavLink to="/projects" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
+          <i className={`fa-solid fa-file ${styles.icon}`}></i>
+          <span> PROYECTOS</span>
+        </NavLink>
+        <NavLink to="/aboutme" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
+          <i className={`fa-brands fa-dev ${styles.icon}`}></i>
+          <span> SOBRE MÍ</span>
+        </NavLink>
+        <NavLink to="/contactme" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
+          <i className={`fa-solid fa-message ${styles.icon}`}></i>
+          <span>CONTACTAME</span>
+        </NavLink>
       </ul>
-    </div>
+    </nav>
   );
 };
 
