@@ -16,8 +16,13 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/resume" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
-            Curriculum Vitae
+          <NavLink to="/aboutme" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
+            Sobre mi
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contactme" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
+            Contactame
           </NavLink>
         </li>
       </ul>

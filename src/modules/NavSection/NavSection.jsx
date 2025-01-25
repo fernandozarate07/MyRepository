@@ -1,20 +1,14 @@
 import NavBar from "../NavBar/NavBar";
 import styles from "./NavSection.module.css";
 import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
+import logo from "../../assets/image/logo.svg";
 
 const NavSection = () => {
   return (
     <div className={styles.navSection}>
-      {/* portal */}
-      <div className={styles.navSection__info}>
-        <div>
-          <h1 className={styles.navSection__name}>Fernando Zárate</h1>
-          <p className={styles.navSection__description}>
-            <span>Desarrollador Web</span>
-            <span>Front End</span>
-          </p>
-        </div>
-        <span className={styles.navSection__copy}>&copy; {new Date().getFullYear()} Fernando Zárate</span>
+      {/* logo */}
+      <div className={styles.navSection__logo}>
+        <img src={logo} alt="logo" width={200} />
       </div>
       {/* main */}
       <NavBar />
@@ -27,6 +21,8 @@ const NavSection = () => {
         />
         <UnderlineButton content="Linkedin" link={"https://www.linkedin.com/in/fernandozaratedev/"} />
       </div>
+      {/* copy */}
+      <span className={styles.navSection__copy}>&copy; {new Date().getFullYear()} Fernando Zárate</span>
     </div>
   );
 };
