@@ -1,30 +1,28 @@
 import styles from "./NavBar.module.css";
-import { useContext } from "react";
-import { AppContext } from "../AppContext/AppContext.jsx";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const { sectionState, setSectionState } = useContext(AppContext);
-
   return (
     <div>
       <ul className={styles.navBar}>
-        <li
-          className={`${styles.li} ${sectionState === "home" && styles.active}`}
-          onClick={() => setSectionState("home")}>
-          Inicio
+        <li>
+          <NavLink to="/" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
+            Inicio
+          </NavLink>
         </li>
-        <li
-          className={`${styles.li} ${sectionState === "projects" && styles.active}`}
-          onClick={() => setSectionState("projects")}>
-          Proyectos
+        <li>
+          <NavLink to="/projects" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
+            Proyectos
+          </NavLink>
         </li>
-        <li
-          className={`${styles.li} ${sectionState === "resume" && styles.active}`}
-          onClick={() => setSectionState("resume")}>
-          Curriculum Vitae
+        <li>
+          <NavLink to="/resume" className={({ isActive }) => `${styles.li} ${isActive ? styles.active : ""}`}>
+            Curriculum Vitae
+          </NavLink>
         </li>
       </ul>
     </div>
   );
 };
+
 export default NavBar;
