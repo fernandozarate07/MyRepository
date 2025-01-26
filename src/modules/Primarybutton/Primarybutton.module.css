@@ -1,10 +1,10 @@
 .btn {
-  padding: 5px 10px;
+  padding: 10px 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: none;
+
   font-weight: 800;
   border: 2px solid var(--primary-color);
   color: var(--white-color);
@@ -18,13 +18,6 @@
   color: var(--primary-color);
 }
 
-.span {
-  position: relative;
-  padding: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
 .btn:hover .span {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }

@@ -28,7 +28,6 @@
 .project__container {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 40px;
 }
 .project__stopContainer {
   position: relative;
@@ -66,8 +65,8 @@
   align-self: center;
 
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
-  gap: 20px;
+  grid-template-rows: 1fr 4.5fr 1fr;
+  gap: 10px;
 }
 .project__titleContainer {
   display: flex;

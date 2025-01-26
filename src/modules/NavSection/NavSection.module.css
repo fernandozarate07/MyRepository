@@ -23,7 +23,6 @@
   padding-bottom: 20px;
   text-align: center;
   font-size: 0.75rem;
-  border-bottom: 26px solid var(--primary-color);
 }
 
 @media (max-width: 992px) {
