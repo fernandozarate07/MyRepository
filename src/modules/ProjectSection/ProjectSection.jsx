@@ -72,47 +72,31 @@ const ProjectSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     if (isPaused) return;
 
-    // activa el fadeOut .5s antes de que cambie de proyecto
-
-    const timer = setTimeout(() => {
-      setFadeOut(true);
-    }, 3500);
     // cambia el intervalo a los 3s
     const intervalId = setInterval(() => {
-      setFadeOut(false);
       setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-    }, 4000);
+    }, 3000);
 
     return () => {
-      clearTimeout(timer);
       clearInterval(intervalId);
     };
   }, [currentIndex, isPaused]);
 
   const nextProject = () => {
-    setFadeOut(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-      setFadeOut(false);
-    }, 250);
+    setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
   };
 
   const prevProject = () => {
-    setFadeOut(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
-      setFadeOut(false);
-    }, 250);
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
   };
 
   return (
     <div
-      className={`${styles.projectSection} ${fadeOut ? "invisible" : "visible"}`}
+      className={styles.projectSection}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}>
       <Project
