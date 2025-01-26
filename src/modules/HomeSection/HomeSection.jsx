@@ -10,8 +10,8 @@ const HomeSection = () => {
         </div>
         <div className={styles.homeSection__ctaContainer}>
           <Primarybutton section={"projects"} content=" VER PROYECTOS" />
-          <Primarybutton section={"projects"} content=" DESGARGAR CV" />
-          <Primarybutton section={"projects"} content=" CONTACTAME" />
+          <Primarybutton section={"aboutme"} content=" DESGARGAR CV" />
+          <Primarybutton section={"contact"} content=" CONTACTAME" />
         </div>
       </div>
     </div>

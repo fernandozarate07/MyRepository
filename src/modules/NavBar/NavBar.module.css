@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 .link {
-  background-color: var(--black-color);
+  background-color: var(--primary-color);
   height: 100%;
 
   display: grid;
@@ -20,8 +20,8 @@
   gap: 20px;
 
   cursor: pointer;
+  opacity: 0.2;
   color: var(--white-color);
-  opacity: 0.5;
 }
 .icon {
   font-size: 1.2rem;

@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .homeSection__content {
   display: flex;
   flex-direction: column;
@@ -18,10 +19,11 @@
   justify-content: center;
 }
 .homeSection__title {
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var(--primary-color);
 }
 .homeSection__para {
-  font-size: var(--xl);
+  font-size: 1.75rem;
 }
 .homeSection__ctaContainer {
   display: flex;
