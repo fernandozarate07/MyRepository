@@ -1,5 +1,5 @@
 import styles from "./Project.module.css";
-import UnderlineButton from "../UnderlineButton/UnderlineButton.jsx";
+import Primarybutton from "../Primarybutton/Primarybutton.jsx";
 
 const Project = ({ title, description, imageUrl, nextProject, prevProject, isPaused, linkApp, linkCode }) => {
   // const { setSectionState } = useContext(AppContext);
@@ -29,9 +29,9 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
       {/* info */}
       <div className={styles.project__right}>
         <div className={styles.project__name}>
-          <UnderlineButton content={title} link={linkApp} />
+          <Primarybutton content={title} link={linkApp} />
           <span className={styles.project__codebase}>
-            <UnderlineButton content={"Code"} link={linkCode} />
+            <Primarybutton content={"Code"} link={linkCode} />
           </span>
         </div>
         <div className={styles.project__descriptionContainer}>
@@ -41,8 +41,8 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
           <p className={styles.project__description}>{description[3]}</p>
         </div>
         <div className={styles.project__opcion}>
-          <UnderlineButton content={"OTROS PROYECTOS"} link={"https://github.com/fernandozarate07"} />
-          <UnderlineButton content={"DESCARGA MI CV"} section={"resume"} />
+          <Primarybutton content={"OTROS PROYECTOS"} link={"https://github.com/fernandozarate07"} />
+          <Primarybutton content={"DESCARGA MI CV"} section={"resume"} />
         </div>
       </div>
     </div>

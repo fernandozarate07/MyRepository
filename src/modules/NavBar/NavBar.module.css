@@ -20,8 +20,8 @@
   gap: 20px;
 
   cursor: pointer;
-  opacity: 0.5;
   color: var(--white-color);
+  opacity: 0.5;
 }
 .icon {
   font-size: 1.2rem;
