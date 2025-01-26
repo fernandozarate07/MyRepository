@@ -19,7 +19,7 @@ const NavBar = () => {
         </NavLink>
         <NavLink to="/contactme" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
           <i className={`fa-solid fa-message ${styles.icon}`}></i>
-          <span>CONTACTAME</span>
+          <span>CONTACTARME</span>
         </NavLink>
       </ul>
     </nav>

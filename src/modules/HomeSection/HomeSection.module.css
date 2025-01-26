@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-right: 25px solid var(--primary-color);
+  border-block: 25px solid var(--primary-color);
 }
 
 .homeSection__content {
@@ -17,13 +19,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .homeSection__title {
-  font-size: 5rem;
-  color: var(--primary-color);
+  font-size: 4rem;
 }
 .homeSection__para {
-  font-size: 1.75rem;
+  font-size: 1.2rem;
 }
 .homeSection__ctaContainer {
   display: flex;
