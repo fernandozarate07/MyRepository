@@ -3,6 +3,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import styles from "./ResumeSection.module.css";
 import logo from "../../assets/image/logo.svg";
+import qr from "../../assets/image/qr.png";
 
 const ResumeSection = () => {
   const targetRef = useRef();
@@ -84,7 +85,33 @@ const ResumeSection = () => {
               <i className="fa-solid fa-location-dot"></i>
               <span>San Juan, Argentina </span>
             </div>
-            <div className={styles.aboutme__resumeQrContainer}></div>
+            <div className={styles.aboutme__resumeQrContainer}>
+              <img src={qr} alt="codigo QR" width={100} />
+            </div>
+          </div>
+          {/* skills */}
+          <div className={styles.aboutme__resumeExperience}>
+            <h3 className={styles.aboutme__resumeSubtitle}>Experiencia Laboral</h3>
+            <p>
+              Tengo 1 año de experiencia como desarrollador freelance y soy fundador de Protoprogramadores, una agencia
+              de desarrollo web con sede en San Juan. He liderado proyectos personalizados con tecnologías a medida y
+              WordPress, brindando soluciones eficientes que se adaptan a las necesidades específicas de nuestros
+              clientes.
+            </p>
+            <h3 className={styles.aboutme__resumeSubtitle}>Estudios</h3>
+            <p className={styles.education}>
+              <span>Tecnicatura en Programación Web, UNSJ (en proceso)</span>
+              <span>Profesorado en Educación Musical, ISSC (finalizado)</span>
+            </p>
+            <h3>Stack de Lenguajes</h3>
+            <ul className={styles.aboutme__resumeSubtitle}>
+              <li>HTML</li>
+              <li>CSS & Bootstrap</li>
+              <li>JavaScript, React & Next.js</li>
+              <li>PostgreSQL</li>
+              <li>Node.js & Express</li>
+              <li>WordPress</li>
+            </ul>
           </div>
         </div>
       </div>

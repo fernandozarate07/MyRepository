@@ -80,16 +80,43 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(5 1fr);
-  gap: 5px;
   justify-content: center;
   align-items: center;
   font-size: var(--xs);
 }
 .aboutme__resumeInfo i,
 .aboutme__resumeInfo img {
-  padding: 2px;
+  padding: 10px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.aboutme__resumeQrContainer {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+/* experience */
+.aboutme__resumeExperience {
+  font-size: var(--s);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.styles.aboutme__resumeSubtitle {
+  font-size: var(--l);
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aboutme__resumeExperience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aboutme__resumeExperience li {
+  list-style-type: none;
 }
