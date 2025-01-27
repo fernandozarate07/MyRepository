@@ -58,8 +58,6 @@
 
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid #ddd;
 }
 .project__infoSection {
   align-self: center;
