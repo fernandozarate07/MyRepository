@@ -19,14 +19,20 @@ const Formcontact = () => {
     setIsSubmitting(true);
     setResponseMessage("");
 
+    // Depuración: Muestra los datos del formulario antes de enviarlo
+    console.log("Form Data Sent:", formData);
+
     try {
-      const response = await fetch("/api/handler", {
+      const response = await fetch("/api/submit-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       const data = await response.json();
+
+      // Depuración: Muestra la respuesta recibida del backend
+      console.log("Response from API:", data);
 
       if (response.ok) {
         setResponseMessage("Message sent successfully!");
