@@ -3,8 +3,8 @@ import styles from "./Primarybutton.module.css";
 
 const Primarybutton = ({ section, content }) => {
   return (
-    <NavLink to={section} className={styles.btn}>
-      <span className={styles.span}>{content}</span>
+    <NavLink to={section} className={styles.button}>
+      <span>{content}</span>
     </NavLink>
   );
 };

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Loader.module.css";
+import logo from "../../assets/image/logo.svg";
 
 const Loader = ({ onComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -16,7 +17,8 @@ const Loader = ({ onComplete }) => {
 
   return (
     <div className={`${styles.loader} ${fadeOut ? "invisible" : "visible"}`}>
-      <div className={styles.loader__text}>
+      <img src={logo} alt="logo" width={100} />
+      <div className={styles.loader__content}>
         <span className={styles.loader__name}>Fernando Zárate</span>
         <span className={styles.loader__description}>Portfolio</span>
       </div>

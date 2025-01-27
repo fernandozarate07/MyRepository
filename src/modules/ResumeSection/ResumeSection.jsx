@@ -61,7 +61,7 @@ const ResumeSection = () => {
           </span>
         </p>
         <button onClick={handleDownloadPDF} className={styles.aboutme__downloadBtn}>
-          DESCARGAR CV
+          <span className={styles.span}>DESCARGAR CV</span>
         </button>
       </div>
       <div className={styles.aboutme__resumeContainer}>
@@ -74,7 +74,7 @@ const ResumeSection = () => {
           {/* contact*/}
           <div className={styles.aboutme__resumeContact}>
             <div className={styles.aboutme__resumeInfo}>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" width={20} />
               <span>www.fernandozarate.website</span>
               <i className="fa-solid fa-mobile-screen-button"></i>
               <span>+54 264 6271151</span>
@@ -93,10 +93,10 @@ const ResumeSection = () => {
           <div className={styles.aboutme__resumeExperience}>
             <h3 className={styles.aboutme__resumeSubtitle}>Experiencia Laboral</h3>
             <p>
-              Tengo 1 año de experiencia como desarrollador freelance y soy fundador de Protoprogramadores, una agencia
-              de desarrollo web con sede en San Juan. He liderado proyectos personalizados con tecnologías a medida y
-              WordPress, brindando soluciones eficientes que se adaptan a las necesidades específicas de nuestros
-              clientes.
+              Cuento con un 1 año de experiencia como desarrollador freelance, soy fundador de Protoprogramadores, una
+              agencia de desarrollo web con sede en San Juan, Argentina. He liderado proyectos personalizados con
+              tecnologías a medida y WordPress, brindando soluciones eficientes que se adaptan a las necesidades
+              específicas de nuestros clientes.
             </p>
             <h3 className={styles.aboutme__resumeSubtitle}>Estudios</h3>
             <p className={styles.education}>

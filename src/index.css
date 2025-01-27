@@ -2,7 +2,8 @@
   /* colors */
   --black-color: #000000;
   --white-color: #ffffff;
-  --primary-color: #2f3b4b;
+  --primary-color: #2ba84a;
+  --secondary-color: #93e5ab;
   /* font size */
 
   --xs: 8px;
@@ -16,17 +17,17 @@
 /* font */
 @font-face {
   font-family: "Font-one";
-  src: url("/src/assets/font/Gothic_A1/GothicA1-Light.ttf") format("truetype");
+  src: url("/src/assets/font/Quicksand/static/Quicksand-Light.ttf") format("truetype");
   font-weight: 100;
 }
 @font-face {
   font-family: "Font-one";
-  src: url("/src/assets/font/Gothic_A1/GothicA1-Regular.ttf") format("truetype");
+  src: url("/src/assets/font/Quicksand/static/Quicksand-Medium.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Font-one";
-  src: url("/src/assets/font/Gothic_A1/GothicA1-Bold.ttf") format("truetype");
+  src: url("/src/assets/font/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
   font-weight: 800;
 }
 
