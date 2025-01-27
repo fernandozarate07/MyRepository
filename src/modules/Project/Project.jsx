@@ -26,12 +26,12 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
         {/* info */}
         <div className={styles.project__infoSection}>
           <div className={styles.project__titleContainer}>
-            <Link to={linkApp} className={styles.project__title}>
+            <a href={linkApp} className={styles.project__title} target="_blank" rel="noopener noreferrer">
               {title}
-            </Link>
-            <Link to={linkCode} className={styles.project__basecode}>
+            </a>
+            <a href={linkCode} className={styles.project__basecode} target="_blank" rel="noopener noreferrer">
               Code
-            </Link>
+            </a>
           </div>
           <div className={styles.project__descriptionContainer}>
             <p className={styles.project__description}>{description[0]}</p>

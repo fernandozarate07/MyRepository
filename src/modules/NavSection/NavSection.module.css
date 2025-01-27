@@ -5,7 +5,7 @@
   padding-inline: 40px;
 
   display: grid;
-  grid-template-rows: 0.75fr 1fr auto;
+  grid-template-rows: 0.5fr 1fr 0.25fr;
 
   background-color: #f8f9fa;
   border-radius: 40px;

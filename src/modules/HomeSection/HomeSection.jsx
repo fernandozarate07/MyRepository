@@ -1,13 +1,13 @@
 import Primarybutton from "../Primarybutton/Primarybutton.jsx";
 import styles from "./HomeSection.module.css";
 import Calltoaction from "../Callaction/Cta.jsx";
-import logo from "../../assets/image/logo.svg";
+import avatar from "../../assets/image/avatar.svg";
 
 const HomeSection = () => {
   return (
     <div className={styles.homeSection}>
       <div className={styles.homeSection__logo}>
-        <img src={logo} alt="logo" className={styles.logo} width={100} />
+        <img src={avatar} alt="logo" className={styles.logo} width={150} />
         <Calltoaction link={"https://www.linkedin.com/in/fernandozaratedev/"} content={"Disponible para trabajar"} />
       </div>
       <div className={styles.homeSection__content}>

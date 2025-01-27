@@ -63,8 +63,8 @@
   align-self: center;
 
   display: grid;
-  grid-template-rows: 0.5fr 3.5fr 0.5fr;
-  gap: 10px;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
 }
 .project__titleContainer {
   display: flex;
