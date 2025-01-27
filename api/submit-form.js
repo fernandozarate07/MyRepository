@@ -1,28 +1,27 @@
-// api/form-handler.js
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
 
-    // Valida los datos del formulario
+    // Validación básica de los datos del formulario
     if (!name || !email || !message) {
       return res.status(400).json({ error: "All fields are required" });
     }
 
-    // Configura el transportador de Nodemailer
+    // Configuración del transportador de Nodemailer
     const transporter = nodemailer.createTransport({
-      service: "gmail", // o cualquier otro servicio de correo
+      service: "gmail", // Puedes usar cualquier servicio que prefieras
       auth: {
-        user: process.env.EMAIL_USER, // Tu correo de Google u otro
-        pass: process.env.EMAIL_PASS, // Tu contraseña o aplicación específica
+        user: process.env.EMAIL_USER, // Tu correo (por ejemplo, "usuario@gmail.com")
+        pass: process.env.EMAIL_PASS, // Tu contraseña o la contraseña de aplicación de Google
       },
     });
 
-    // Define el contenido del correo
+    // Definir el contenido del correo
     const mailOptions = {
       from: process.env.EMAIL_USER, // El correo desde el que se enviará
-      to: process.env.RECIPIENT_EMAIL, // Tu correo de destino
+      to: process.env.RECIPIENT_EMAIL, // El correo que recibirá el mensaje
       subject: "Nuevo mensaje de contacto",
       text: `Tienes un nuevo mensaje de ${name} (${email}):\n\n${message}`,
     };
