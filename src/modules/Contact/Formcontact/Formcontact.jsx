@@ -18,7 +18,7 @@ const Formcontact = () => {
 
     try {
       // Aquí asumimos que la ruta es correcta (ajustada a tu estructura)
-      const response = await fetch("../../../api/submit-form.js", {
+      const response = await fetch("/api/submit-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
