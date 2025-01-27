@@ -17,6 +17,13 @@ export default async function handler(req, res) {
         pass: process.env.EMAIL_PASS, // Tu contraseña o la contraseña de aplicación de Google
       },
     });
+    transporter.verify((error, success) => {
+      if (error) {
+        console.error("SMTP Connection Error:", error);
+      } else {
+        console.log("SMTP Connection Successful!");
+      }
+    });
 
     // Definir el contenido del correo
     const mailOptions = {
@@ -31,8 +38,8 @@ export default async function handler(req, res) {
       await transporter.sendMail(mailOptions);
       return res.status(200).json({ success: true, message: "Form submitted and email sent successfully!" });
     } catch (error) {
-      console.error("Error sending email:", error);
-      return res.status(500).json({ error: "Error sending email" });
+      console.error("Error sending email:", error); // Muestra el error detallado
+      return res.status(500).json({ error: `Error sending email: ${error.message}` }); // Incluye el mensaje del error en la respuesta
     }
   }
 

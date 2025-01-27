@@ -8,6 +8,7 @@ const Formcontact = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,10 +16,11 @@ const Formcontact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setResponseMessage("");
 
     try {
-      // Aquí asumimos que la ruta es correcta (ajustada a tu estructura)
-      const response = await fetch("/api/submit-form", {
+      const response = await fetch("/api/handler", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -27,12 +29,14 @@ const Formcontact = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setResponseMessage(data.message);
+        setResponseMessage("Message sent successfully!");
       } else {
-        setResponseMessage(data.error || "An error occurred");
+        setResponseMessage(data.error || "An error occurred while sending the message.");
       }
     } catch (error) {
       setResponseMessage("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -53,7 +57,9 @@ const Formcontact = () => {
         value={formData.message}
         onChange={handleChange}
         required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send"}
+      </button>
       {responseMessage && <p>{responseMessage}</p>}
     </form>
   );

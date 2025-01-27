@@ -1,4 +1,4 @@
-import Formcontact from "./Formcontact/Formcontact.jsx";
+import Formcontact from "../Formcontact/Formcontact.jsx";
 const ContactSection = () => {
   return (
     <div>
