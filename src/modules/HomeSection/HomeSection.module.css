@@ -51,6 +51,7 @@
   .homeSection {
     padding-inline: 10px;
     gap: 20px;
+    padding-bottom: 10px;
   }
   .homeSection__title {
     font-size: 2rem;
