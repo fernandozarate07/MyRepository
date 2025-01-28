@@ -48,6 +48,7 @@
     width: 100%;
     padding: 10px 0px;
     border-radius: 0;
+    border: 2px solid var(--primary-color);
   }
   .link:first-child {
     border-radius: 40px 0px 0px 40px;
