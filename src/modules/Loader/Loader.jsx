@@ -17,7 +17,7 @@ const Loader = ({ onComplete }) => {
 
   return (
     <div className={`${styles.loader} ${fadeOut ? "invisible" : "visible"}`}>
-      <img src={logo} alt="logo" width={100} />
+      <img src={logo} alt="logo" width={100} className="logo" />
       <div className={styles.loader__content}>
         <span className={styles.loader__name}>Fernando Zárate</span>
         <span className={styles.loader__description}>Portfolio</span>

@@ -46,3 +46,11 @@
     transform: translateX(0);
   }
 }
+@media (max-width: 576px) {
+  .loader__name {
+    font-size: 2rem;
+  }
+  .logo {
+    width: 50px;
+  }
+}
