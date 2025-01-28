@@ -48,6 +48,7 @@
   .navSection {
     padding: 10px;
     gap: 20px;
+    border-radius: 0;
   }
   .navSection__logo {
     width: 60px;
