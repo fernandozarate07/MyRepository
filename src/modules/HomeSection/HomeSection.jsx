@@ -12,7 +12,7 @@ const HomeSection = () => {
       </div>
       <div className={styles.homeSection__containerDescription}>
         <h1 className={styles.homeSection__title}>Hola, Soy Fernando.</h1>
-        <h2>
+        <h2 className={styles.homeSection__titleTwo}>
           Desarrollador Web Fullstacks <i className="fa-solid fa-hand-peace"></i>
         </h2>
         <p className={styles.homeSection__para}>¿Qué te trae por aquí?</p>

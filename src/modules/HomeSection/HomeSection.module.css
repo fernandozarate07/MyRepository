@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  overflow: scroll;
 }
 .homeSection__logo {
   display: flex;
@@ -23,9 +25,14 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  text-align: center;
 }
 .homeSection__title {
   font-size: 3rem;
+}
+.homeSection__titleTwo {
+  font-size: 2rem;
 }
 .homeSection__containerDescription i {
   color: var(--primary-color);
@@ -38,9 +45,22 @@
   justify-content: center;
   gap: 10px;
 }
+@media (max-width: 992px) {
+}
 @media (max-width: 576px) {
   .homeSection {
-    padding: 10px;
-    font-size: var(--s);
+    padding-inline: 10px;
+  }
+  .homeSection__title {
+    font-size: 2rem;
+  }
+  .homeSection__titleTwo {
+    font-size: 1rem;
+  }
+  .homeSection__para {
+    font-size: 0.75rem;
+  }
+  .homeSection__ctaContainer {
+    flex-direction: column;
   }
 }

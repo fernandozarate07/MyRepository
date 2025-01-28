@@ -42,16 +42,22 @@
 @media (max-width: 992px) {
   .navBar {
     flex-direction: row;
-    gap: 10px;
+    gap: 0px;
   }
   .link {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0px;
+    border-radius: 0;
+  }
+  .link:first-child {
+    border-radius: 40px 0px 0px 40px;
+  }
+  .link:last-child {
+    border-radius: 0px 40px 40px 0px;
   }
 }
 @media (max-width: 576px) {
   .link {
-    width: 100%;
-    padding: 5px 10px;
+    padding: 5px 0px;
   }
 }
