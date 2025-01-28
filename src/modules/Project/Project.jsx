@@ -1,5 +1,5 @@
 import styles from "./Project.module.css";
-import Buttonprimary from "../buttonprimary/Buttonprimary";
+import Buttonprimary from "../Buttonprimary/Buttonprimary";
 
 const Project = ({ title, description, imageUrl, nextProject, prevProject, isPaused, linkApp, linkCode }) => {
   return (
