@@ -50,6 +50,8 @@
 @media (max-width: 576px) {
   .homeSection {
     padding-inline: 10px;
+    justify-content: flex-start;
+    padding-top: 10px;
   }
   .homeSection__title {
     font-size: 2rem;
@@ -58,7 +60,7 @@
     font-size: 1rem;
   }
   .homeSection__para {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .homeSection__ctaContainer {
     flex-direction: column;
