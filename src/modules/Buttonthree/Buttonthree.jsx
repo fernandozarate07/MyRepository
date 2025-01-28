@@ -1,4 +1,4 @@
-import styles from "./Secondarybutton.module.css";
+import styles from "./Buttonthree.module.css";
 
 const SecondaryButton = ({ link, content }) => {
   // Función para abrir la ventana emergente más pequeña solo para el correo
@@ -30,7 +30,7 @@ const SecondaryButton = ({ link, content }) => {
       rel="noreferrer"
       onClick={handleClick} // Asignamos el manejador de clic
     >
-      <i className={content}></i>
+      {content}
     </a>
   );
 };

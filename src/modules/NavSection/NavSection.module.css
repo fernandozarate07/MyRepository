@@ -12,14 +12,13 @@
 }
 .navSection__logo {
   display: flex;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .navSection__contact {
-  padding-bottom: 40px;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   font-size: 0.75rem;

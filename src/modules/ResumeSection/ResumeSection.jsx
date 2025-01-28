@@ -60,8 +60,8 @@ const ResumeSection = () => {
             canción hasta desarrollar una aplicación.
           </span>
         </p>
-        <button onClick={handleDownloadPDF} className={styles.aboutme__downloadBtn}>
-          <span className={styles.span}>DESCARGAR CV</span>
+        <button onClick={handleDownloadPDF} className={styles.button}>
+          DESCARGAR CV
         </button>
       </div>
       <div className={styles.aboutme__resumeContainer}>

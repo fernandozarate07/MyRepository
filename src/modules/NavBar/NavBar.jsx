@@ -17,10 +17,6 @@ const NavBar = () => {
           <i className={`fa-brands fa-dev ${styles.icon}`}></i>
           <span> SOBRE MÍ</span>
         </NavLink>
-        <NavLink to="/contactme" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ""}`}>
-          <i className={`fa-solid fa-message ${styles.icon}`}></i>
-          <span>CONTACTARME</span>
-        </NavLink>
       </ul>
     </nav>
   );

@@ -2,6 +2,7 @@ import Primarybutton from "../Primarybutton/Primarybutton.jsx";
 import styles from "./HomeSection.module.css";
 import Calltoaction from "../Callaction/Cta.jsx";
 import avatar from "../../assets/image/avatar.svg";
+import Buttonthree from "../Buttonthree/Buttonthree.jsx";
 
 const HomeSection = () => {
   return (
@@ -22,7 +23,7 @@ const HomeSection = () => {
       <div className={styles.homeSection__ctaContainer}>
         <Primarybutton section={"projects"} content=" VER PROYECTOS" />
         <Primarybutton section={"aboutme"} content=" DESGARGAR CV" />
-        <Primarybutton section={"contactme"} content=" CONTACTARME" />
+        <Buttonthree content="CONTACTARME" link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!" />
       </div>
     </div>
   );
