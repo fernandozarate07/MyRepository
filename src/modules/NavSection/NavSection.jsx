@@ -14,12 +14,17 @@ const NavSection = () => {
       <NavBar />
       {/* contact */}
       <div className={styles.navSection__contact}>
-        <SecondaryButton content="fa-brands fa-square-github" link="https://github.com/fernandozarate07" />
-        <SecondaryButton content="fa-solid fa-envelope" link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!" />
-        <SecondaryButton content="fa-brands fa-linkedin" link="https://www.linkedin.com/in/fernandozaratedev/" />
+        <div className={styles.navSection__buttonsContainer}>
+          <SecondaryButton content="fa-brands fa-square-github" link="https://github.com/fernandozarate07" />
+          <SecondaryButton
+            content="fa-solid fa-envelope"
+            link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!"
+          />
+          <SecondaryButton content="fa-brands fa-linkedin" link="https://www.linkedin.com/in/fernandozaratedev/" />
+        </div>
+        {/* copy */}
+        <span className={styles.navSection__copy}>&copy; {new Date().getFullYear()} Fernando Zárate</span>
       </div>
-      {/* copy */}
-      <span className={styles.navSection__copy}>&copy; {new Date().getFullYear()} Fernando Zárate</span>
     </div>
   );
 };

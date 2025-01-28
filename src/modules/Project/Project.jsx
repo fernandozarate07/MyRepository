@@ -1,6 +1,5 @@
 import styles from "./Project.module.css";
-import Primarybutton from "../Primarybutton/Primarybutton.jsx";
-import { Link } from "react-router-dom";
+import Buttonprimary from "../buttonprimary/Buttonprimary";
 
 const Project = ({ title, description, imageUrl, nextProject, prevProject, isPaused, linkApp, linkCode }) => {
   return (
@@ -40,8 +39,12 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
             <p className={styles.project__description}>{description[3]}</p>
           </div>
           <div className={styles.project__opcion}>
-            <Primarybutton content={"CONTACTARME"} section={"/contactme"} />
-            <Primarybutton content={"DESCARGA CV"} section={"/aboutme"} />
+            <Buttonprimary
+              type="link"
+              content="Contáctame"
+              link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!"
+            />
+            <Buttonprimary type="navlink" content={"Dercargar CV"} section={"/aboutme"} />
           </div>
         </div>
       </div>

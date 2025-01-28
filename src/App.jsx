@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext } from "react";
-import { AppContext } from "./modules/AppContext/AppContext.jsx";
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeSection from "./modules/HomeSection/HomeSection.jsx";
 import ResumeSection from "./modules/ResumeSection/ResumeSection.jsx";
@@ -15,8 +14,9 @@ function App() {
     <Router>
       <div className="app">
         {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
+
         <div className={`app__container ${isLoading ? "invisible" : "visible"}`}>
-          <section className="app__left">
+          <section>
             <NavSection />
           </section>
           <section>

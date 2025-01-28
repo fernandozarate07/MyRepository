@@ -5,8 +5,6 @@ import Project from "../Project/Project";
 import imgOne from "../../assets/image/one.png";
 import imgTwo from "../../assets/image/two.png";
 import imgThree from "../../assets/image/three.png";
-import imgFour from "../../assets/image/four.png";
-import imgFive from "../../assets/image/five.png";
 
 const ProjectSection = () => {
   const projects = [
@@ -43,30 +41,6 @@ const ProjectSection = () => {
       ],
       linkApp: "https://protoprogramadores.com",
       linkCode: "none",
-    },
-    {
-      imageUrl: imgFour,
-      title: "Sketchbox",
-      description: [
-        "Sketchbox es una app de dibujo inspirada en el clásico Paint.",
-        "Desarrollada como un desafío de aprendizaje, cual condiciones indicaban usar solamente Flexbox y Vanilla JS, evitando Grid.",
-        "Para lograr la funcionalidad se implementó un algoritmo propio para ajustar la cuadrícula perfectamente al contenedor.",
-        "Tecnologías: HTML ~ CSS ~ Vanilla JS",
-      ],
-      linkApp: "https://etch-a-sketch-kappa-six.vercel.app/",
-      linkCode: "https://github.com/fernandozarate07/Etch-a-Sketch",
-    },
-    {
-      imageUrl: imgFive,
-      title: "My Portfolio",
-      description: [
-        "Si ya lo sé, es redundante colocar aquí la web que ya estás utilizando. Sin embargo, quería comentarte un poco sobre el proceso detrás de su desarrollo.",
-        "Este portafolio está diseñado como una Single Page Application (SPA). Utilizando React, ofrece una navegación fluida y rápida. Implementa Context API para una gestión de estado global, para la descarga del CV utilicé Canvas y jsPDF.",
-        "Cuenta con un Responsive Design que se adapta perfectamente a distintos dispositivos.",
-        "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Canvas ~ jsPDF",
-      ],
-      linkApp: "",
-      linkCode: "https://github.com/fernandozarate07/MyRepository",
     },
   ];
 

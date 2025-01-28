@@ -4,6 +4,8 @@ import jsPDF from "jspdf";
 import styles from "./ResumeSection.module.css";
 import logo from "../../assets/image/logo.svg";
 import qr from "../../assets/image/qr.png";
+import Calltoaction from "../Callaction/Cta.jsx";
+import Buttonprimary from "../Buttonprimary/Buttonprimary.jsx";
 
 const ResumeSection = () => {
   const targetRef = useRef();
@@ -60,9 +62,10 @@ const ResumeSection = () => {
             canción hasta desarrollar una aplicación.
           </span>
         </p>
-        <button onClick={handleDownloadPDF} className={styles.button}>
-          DESCARGAR CV
-        </button>
+        <div className={styles.btnsContainer}>
+          <Buttonprimary type="button" content={"Descargar CV"} action={handleDownloadPDF} />
+          <Calltoaction link={"https://www.linkedin.com/in/fernandozaratedev/"} content={"Disponible para trabajar"} />
+        </div>
       </div>
       <div className={styles.aboutme__resumeContainer}>
         <div ref={targetRef} className={styles.aboutme__resumeContent}>
@@ -74,7 +77,7 @@ const ResumeSection = () => {
           {/* contact*/}
           <div className={styles.aboutme__resumeContact}>
             <div className={styles.aboutme__resumeInfo}>
-              <img src={logo} alt="logo" width={20} />
+              <img src={logo} alt="logo" width={15} />
               <span>www.fernandozarate.website</span>
               <i className="fa-solid fa-mobile-screen-button"></i>
               <span>+54 264 6271151</span>
