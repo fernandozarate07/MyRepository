@@ -29,17 +29,17 @@
 }
 .link:hover {
   opacity: 1;
-  color: var(--primary-color);
 }
 .icon {
   font-size: 1.2rem;
   text-align: center;
 }
 .active {
-  color: var(--primary-color);
+  color: var(--white-color);
   opacity: 1;
   font-weight: 800;
   border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 @media (max-width: 992px) {
   .navBar {

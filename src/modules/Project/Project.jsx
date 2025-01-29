@@ -6,7 +6,7 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
     <div className={styles.project}>
       {/* btn up */}
       <button onClick={prevProject} className={styles.project__projectBtn}>
-        Anterior
+        <i className="fa-solid fa-arrow-left"></i>
       </button>
       {/* Container */}
       <div className={styles.project__container}>
@@ -20,7 +20,7 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
               </div>
             )}
             <div className={styles.project__img}>
-              <img src={imageUrl} alt={title} width={250} />
+              <img src={imageUrl} alt={title} width={300} />
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
       </div>
       {/* btn down */}
       <button onClick={nextProject} className={styles.project__projectBtn}>
-        Siguiente
+        <i className="fa-solid fa-arrow-right"></i>
       </button>
     </div>
   );

@@ -5,7 +5,7 @@
   grid-template-columns: auto 1fr auto;
 }
 .project__projectBtn {
-  padding: 40px 20px;
+  padding: 20px;
   height: fit-content;
 
   display: flex;
@@ -18,11 +18,10 @@
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   opacity: 0.2;
-  font-size: var(--m);
-  transform: rotate(-90deg);
+  font-size: var(--xxl);
 }
 .project__projectBtn:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   color: var(--black-color);
   opacity: 1;
 }
@@ -55,7 +54,7 @@
 }
 .project__img {
   width: 100%;
-  height: 350px;
+  height: 300px;
 
   display: flex;
   justify-content: center;
@@ -108,40 +107,21 @@
 }
 @media (max-width: 992px) {
   .project {
-    max-height: 800px;
-    margin-block: auto;
-    margin-inline: 50px;
-
-    gap: 50px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
   }
 }
 @media (max-width: 576px) {
   .project {
-    max-height: 400px;
-    margin-inline: 10px;
-    margin-block: 10px;
-
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
   }
-  .project_left {
-    gap: 10px;
+  /* .project_left {
   }
   .project__img {
-    max-height: 100px;
-    max-width: 200px;
   }
   .project__opcion {
-    padding-top: 5px;
   }
   .project__right {
-    gap: 5px;
   }
   .projectSection__stopBtn {
-    background-color: var(--black-color);
-    color: var(--white-color);
-  }
+  } */
 }

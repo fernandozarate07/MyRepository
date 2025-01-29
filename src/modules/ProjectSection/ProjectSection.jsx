@@ -10,11 +10,10 @@ const ProjectSection = () => {
   const projects = [
     {
       imageUrl: imgOne,
-      title: "TrueTone",
+      title: "Truetone",
       description: [
-        "TrueTone es una app de afinador simple y precisa para guitarra, bajo y ukulele.",
-        "Es una Single Page Application (SPA) desarrollada con React.",
-        "Utiliza la Web Audio API para capturar y procesar el sonido, y es completamente responsive para una experiencia óptima en cualquier dispositivo.",
+        "Es una aplicación de afinador sencilla y precisa para guitarra, bajo y ukelele.",
+        "Desarrollada como una Single Page Application (SPA) con React, aprovecha la Web Audio API para capturar y procesar el sonido en tiempo real. Su diseño completamente responsive garantiza una experiencia óptima en cualquier dispositivo.",
         "Tecnologías: HTML ~ CSS ~ React ~ Vite ~ Web Audio API",
       ],
       linkApp: "https://tuner-app-mu.vercel.app/",
@@ -22,9 +21,9 @@ const ProjectSection = () => {
     },
     {
       imageUrl: imgTwo,
-      title: "Simple Weather",
+      title: "Simther",
       description: [
-        "Simple Weather es una aplicación web intuitiva y minimalista que permite conocer el clima de cualquier ciudad con solo unos clics. Utiliza la API de Visual Crossing para proporcionar datos precisos y actualizados del clima.",
+        "Es una aplicación web que permite conocer el clima de cualquier ciudad con solo unos clics. Utiliza la API de Visual Crossing para proporcionar datos precisos y actualizados del clima.",
         "La app está desarrollada con una arquitectura VCM (Vista-Controlador-Modelo), lo que garantiza una estructura ordenada y eficiente. La lógica de programación y el código de renderizado están perfectamente separados y se conectan a través del Controlador, que gestiona la interacción con el DOM.",
         "Tecnologias: HTML ~ CSS ~ Vanilla JS ~ WebPack",
       ],
@@ -35,8 +34,8 @@ const ProjectSection = () => {
       imageUrl: imgThree,
       title: "Protoprogramadores",
       description: [
-        "Protoprogramadores es una agencia digital que crea y mantiene sitios web profesionales para negocios y emprendedores.",
-        "Fue creada con WordPress utilizando, WooCommerce para crear la tienda online.",
+        "Protoprogramadores es una agencia digital especializada en la creación y mantenimiento de sitios web profesionales para negocios y emprendedores.",
+        "Su plataforma fue desarrollada con WordPress e incorpora WooCommerce para gestionar la tienda online de manera eficiente.",
         "Tecnologías:  HTML ~ CSS ~ React ~ WordPress ~ WooCommerce ~ Rank Math",
       ],
       linkApp: "https://protoprogramadores.com",
