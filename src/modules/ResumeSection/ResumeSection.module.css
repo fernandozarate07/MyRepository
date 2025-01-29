@@ -129,11 +129,15 @@
   .aboutme__resumeContent {
     padding: 5px;
 
-    width: 350px;
-    height: 490px;
+    width: 330px;
+    height: 462px;
+  }
+  .aboutme__resumeInfo {
+    gap: 5px;
   }
   .aboutme__resumeExperience {
     font-size: var(--xs);
+    gap: 5px;
   }
   .styles.aboutme__resumeSubtitle {
     font-size: var(--m);
