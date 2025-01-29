@@ -117,3 +117,11 @@
 .aboutme__resumeExperience li {
   list-style-type: none;
 }
+@media (max-width: 992px) {
+  .aboutme {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+}

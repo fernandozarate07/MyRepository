@@ -114,5 +114,6 @@
 @media (max-width: 576px) {
   .project {
     padding: 20px;
+    gap: 10px;
   }
 }
