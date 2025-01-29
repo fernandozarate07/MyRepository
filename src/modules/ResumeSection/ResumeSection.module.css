@@ -136,6 +136,9 @@
   .aboutme__resumeInfo {
     gap: 2px;
   }
+  .aboutme__resumeQrContainer img {
+    width: 75px;
+  }
   .aboutme__resumeExperience {
     font-size: var(--xs);
     gap: 5px;
