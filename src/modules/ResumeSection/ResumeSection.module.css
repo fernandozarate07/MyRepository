@@ -119,8 +119,10 @@
 }
 @media (max-width: 992px) {
   .aboutme {
+    padding: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0px;
   }
 }
 @media (max-width: 576px) {
