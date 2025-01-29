@@ -131,9 +131,10 @@
 
     width: 330px;
     height: 462px;
+    gap: 10px;
   }
   .aboutme__resumeInfo {
-    gap: 5px;
+    gap: 2px;
   }
   .aboutme__resumeExperience {
     font-size: var(--xs);
