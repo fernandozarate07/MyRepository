@@ -113,15 +113,6 @@
 }
 @media (max-width: 576px) {
   .project {
+    padding: 20px;
   }
-  /* .project_left {
-  }
-  .project__img {
-  }
-  .project__opcion {
-  }
-  .project__right {
-  }
-  .projectSection__stopBtn {
-  } */
 }
