@@ -19,7 +19,9 @@ const Project = ({ title, description, imageUrl, nextProject, prevProject, isPau
                 <i className="fa-solid fa-pause"></i>
               </div>
             )}
-            <img src={imageUrl} alt={title} className={styles.project__img} />
+            <div className={styles.project__img}>
+              <img src={imageUrl} alt={title} width={250} />
+            </div>
           </div>
         </div>
         {/* info */}

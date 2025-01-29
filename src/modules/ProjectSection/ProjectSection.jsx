@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import styles from "./ProjectSection.module.css";
 import Project from "../Project/Project";
 
-import imgOne from "../../assets/image/one.png";
-import imgTwo from "../../assets/image/two.png";
-import imgThree from "../../assets/image/three.png";
+import imgOne from "../../assets/image/one.svg";
+import imgTwo from "../../assets/image/two.svg";
+import imgThree from "../../assets/image/three.svg";
 
 const ProjectSection = () => {
   const projects = [
