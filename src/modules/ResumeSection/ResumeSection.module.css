@@ -126,4 +126,16 @@
   }
 }
 @media (max-width: 576px) {
+  .aboutme__resumeContent {
+    padding: 5px;
+
+    width: 350px;
+    height: 490px;
+  }
+  .aboutme__resumeExperience {
+    font-size: var(--xs);
+  }
+  .styles.aboutme__resumeSubtitle {
+    font-size: var(--m);
+  }
 }

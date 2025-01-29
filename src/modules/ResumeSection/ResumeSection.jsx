@@ -92,7 +92,7 @@ const ResumeSection = () => {
               <img src={qr} alt="codigo QR" width={100} />
             </div>
           </div>
-          {/* skills */}
+          {/* experience*/}
           <div className={styles.aboutme__resumeExperience}>
             <h3 className={styles.aboutme__resumeSubtitle}>Experiencia Laboral</h3>
             <p>
